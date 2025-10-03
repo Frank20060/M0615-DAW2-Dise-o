@@ -1,0 +1,95 @@
+
+/*  header  */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0px 20px;
+
+}
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header div{
+    padding: 15px;
+    font-size: 20px;
+}
+header .join{
+
+    background-color: rgba(207, 207, 207, 0.603);
+    border-radius: 10px;
+    padding-left : 20px;
+    padding-right : 20px;
+
+}
+header img{
+
+    width: 30px;
+
+}
+
+/*  introduccion    */
+
+.introduccion  {
+
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(43, 43, 43, 0.74);    /*Cambiar a bakgraund image*/
+    border-radius: 20px;
+    color: white;
+    padding: 30px;
+}
+.introduccionContenido{
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 80vw;
+    height: 55vh;
+
+}
+.introduccionContenido button{
+
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+
+
+}
+#btnIntro1{
+    background-color: rgb(51, 180, 255);
+
+}
+
+#botonPlay{
+
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 1.4%;
+    width: 30%;
+    height: 20%;
+    align-items: end;
+    
+
+}
+#botonPlay:hover{
+
+    background-color: rgba(37, 37, 37, 0.664);  
+
+}
+#botonPlay img{
+
+    width: 20%;
+
+}
