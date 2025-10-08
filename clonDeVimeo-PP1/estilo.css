@@ -1,13 +1,29 @@
 
 /*  header  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Montserrat;
+}
+body{
 
+    padding: 20px;
+
+}
 header{
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 95vw;
     box-sizing: border-box;
-    padding: 0px 20px;
+    padding: 0px 20px 20px 20px;
 
+}
+header h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Dancing Script';
 }
 header nav{
     display: flex;
@@ -35,27 +51,76 @@ header img{
 /*  introduccion    */
 
 .introduccion  {
-
-    justify-items: center;
-    justify-content: center;
     display: flex;
+    justify-items: center;
+    justify-content: center;   
     flex-direction: column;
-    background-color: rgba(43, 43, 43, 0.74);    /*Cambiar a bakgraund image*/
     border-radius: 20px;
     color: white;
-    padding: 30px;
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    
 }
+/*Video fondo*/
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 20px;
+}
+.introduccionContenido, .btnPlay {
+    position: relative;
+    z-index: 1;
+}
+
 .introduccionContenido{
 
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    width: 80vw;
-    height: 55vh;
+    width: 100%;
+    height: 50vh;
+    padding: 20px 20px 20px 0px;
+    gap: 20px;
 
 }
-.introduccionContenido button{
+.introduccionContenido h1{
+
+    padding:  0px 40px;
+    justify-content: center;
+    text-align: center;
+    width: 60%;    
+
+}
+.introduccionContenido p{
+    padding:  0px 40px;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+
+}
+.introduccionContenido h3{
+    
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.btnsIntro{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.btnsIntro button{
 
     width: fit-content;
     height: fit-content;
@@ -63,6 +128,7 @@ header img{
     margin: 10px;
     border: none;
     border-radius: 10px;
+    font-weight: 700;
 
 
 }
@@ -70,26 +136,30 @@ header img{
     background-color: rgb(51, 180, 255);
 
 }
+#btnIntro2{
+    background-color: transparent;
+    color: white;
+}
 
-#botonPlay{
-
-    background-color: black;
-    border: none;
+.btnPlay{
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 90px;
+    height: 60px;
+    background-color:rgb(51, 180, 255);
     border-radius: 20px;
-    padding: 1.4%;
-    width: 30%;
-    height: 20%;
-    align-items: end;
+    margin: 20px;
+
+}
+.btnPlay img{
+    width: 60px;
+    height: 60px;
+    padding: 15px;
     
 
 }
-#botonPlay:hover{
 
-    background-color: rgba(37, 37, 37, 0.664);  
 
-}
-#botonPlay img{
-
-    width: 20%;
-
-}

@@ -5,26 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vimeo</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <h1>vimeo</h1>
         <nav>
-            <div>Log In</div>
-            <div class="join">Join</div>
+            <div>Iniciar sesión</div>
+            <div class="join">Unirse</div>
             <img src="img/listaMenuNav.png" alt="icono menu">
         </nav>
     </header>
     <main>
+        
         <div class="introduccion">
+            <video autoplay loop muted playsinline class="video-bg">
+                <source src="https://player.vimeo.com/progressive_redirect/playback/1069021926/rendition/720p/file.mp4?loc=external&signature=8cfe0374460e6987523da7a4a3ad195acf04529e4c45a6bc90ef38b520611f72" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
             <div class="introduccionContenido">
-                <h3>Su plataforma de video completa</h3>
+                <h3>SU PLARATOMA DE VIDEO COMPLETA</h3>
                 <h1>Sus videos, a su manera</h1>
                 <p>La plataforma sin anuncios de Vimeo le ofrece todo lo que necesita para alojar, gestionar y compartir videos de alta calidad.</p>
-                <button id="btnIntro1">Ver Planes →</button>
-                <button id="btnIntro2">Probar Gratis →</button>
+                <div class="btnsIntro">
+                    <button id="btnIntro1">Ver los planes →</button>
+                    <button id="btnIntro2">Probar Gratis →</button>
+                </div>
             </div>
-            <button id="botonPlay"><img src="img/play-buttton.png" alt="Boton Play de un video"></button>
+            <div class="btnPlay">
+                <img src="img/play-buttton.png" alt="boton play">
+            </div>
+            
+        </div>
+        <div class="seccionConfianza">
+            <p>Con la confianza de más de 287 millones de creativos, profesionales del marketing y empresas</p>
         </div>
 
     </main>
