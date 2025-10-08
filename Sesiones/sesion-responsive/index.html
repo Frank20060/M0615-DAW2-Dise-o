@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion - Web Responsive</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .contenedor{
+            background-color: red;
+            width: fit-content;
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+            
+
+            & .seccion1{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+            }
+            & .card{    /*Este css solo funciona en los divs card que estan dentro del contenedor*/
+                background-color: blue;
+                border: 2px solid black;
+                box-sizing: border-box;
+                width: 100%;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        }
+        @media (width >= 560px){
+            .contenedor .seccion1{
+                flex-direction: row;
+                height: 200px;
+            }
+            .contenedor .seccion1 .card{
+                width: 50%;
+                height: 100%;
+            }
+            .contenedor .card{
+                width: 100%;
+                height: 200px;
+            }
+        }
+        @media (width >= 1000px){
+            .contenedor{
+                display: flex;
+                flex-direction: row;
+            }
+            .contenedor .seccion1{
+                flex-direction: row;
+                height: 200px;
+            }
+            .contenedor .seccion1 .card{
+                width: 50%;
+                height: 100%;
+            }
+            .contenedor .card{
+                width: 100%;
+                height: 200px;
+            }
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="seccion1">
+            <div class="card">1</div>
+            <div class="card">2</div>
+        </div>
+        <div class="card">3</div>
+    </div>
+</body>
+</html>
