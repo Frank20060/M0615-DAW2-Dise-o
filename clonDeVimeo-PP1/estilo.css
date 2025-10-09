@@ -8,31 +8,42 @@
 }
 body{
 
-    padding: 20px;
+    
 
 }
 header{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    width: 95vw;
-    box-sizing: border-box;
-    padding: 0px 20px 20px 20px;
-
+    width: 100vw;
+    height: 12vh;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    position: fixed;
+    top: 0;            
+    left: 0;            
+    right: 0;
+    z-index: 1000;        
+    background: rgba(249, 249, 249, 0.591);
+    backdrop-filter: blur(5px); 
+    border-radius: 0px 0px 20px 20px;
 }
 header h1{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     font-family: 'Dancing Script';
 }
 header nav{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 header div{
-    padding: 15px;
-    font-size: 20px;
+    padding: 15px 0px;
+    font-size: 15px;
+    width: fit-content;
+    
+
 }
 header .join{
 
@@ -51,6 +62,8 @@ header img{
 /*  introduccion    */
 
 .introduccion  {
+    margin: 20px;
+    margin-top: 12vh;
     display: flex;
     justify-items: center;
     justify-content: center;   
@@ -96,7 +109,8 @@ header img{
     padding:  0px 40px;
     justify-content: center;
     text-align: center;
-    width: 60%;    
+    width: 90%;    
+    font-size: 30px;
 
 }
 .introduccionContenido p{
@@ -104,12 +118,13 @@ header img{
     justify-content: center;
     text-align: center;
     width: 90%;
+    font-size: 15px;
 
 }
 .introduccionContenido h3{
     
-    font-weight: 100;
-    font-size: 15px;
+    font-weight: 300;
+    font-size: 13px;
 }
 
 .btnsIntro{
@@ -125,7 +140,7 @@ header img{
     width: fit-content;
     height: fit-content;
     padding: 15px 20px;
-    margin: 10px;
+    margin: 8px;
     border: none;
     border-radius: 10px;
     font-weight: 700;
@@ -151,7 +166,8 @@ header img{
     height: 60px;
     background-color:rgb(51, 180, 255);
     border-radius: 20px;
-    margin: 20px;
+    margin: 25px;
+    margin-top: 100px;
 
 }
 .btnPlay img{
@@ -163,3 +179,96 @@ header img{
 }
 
 
+/*  Seccion de confianza  */
+
+.seccionConfianza{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px;
+
+}
+
+
+/*  Seccion de las imagenes que van moviendose (No se de donde sacar las imagenes)*/
+
+.imgQseMueven{
+    padding-top: 20px;
+    background-color: red;
+    height: 30vh;
+    width: 100vw;
+}
+
+
+/*  Seccion de Diseñado  */
+
+.seccionDisenado{
+    margin: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.seccionDisenado  h1{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 20px 20px 5px 20px;
+}
+.seccionDisenado  p{
+    font-size: 15px;
+    width: 95%;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.seccionDisenado button{
+    background-color: rgb(51, 180, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+/*  Seccion plataforma que IMpulsa  */
+
+.seccionPlataformaQueImpulsa{
+    color: white;
+    background-color: rgb(40, 37, 37);
+    justify-items: center;
+    
+    padding: 20px;
+}
+.seccionPlataformaQueImpulsa h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.seccionPlataformaQueImpulsa video{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+.tituloImpulsa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0px;
+    width: 100%;
+    font-weight: 600;
+}
+.pImpulsa{
+    width: 55%;
+    text-align: left;
+}
+.padreImpulsa p{
+
+    text-align: justify;
+}
