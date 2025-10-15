@@ -271,3 +271,89 @@ header img{
 
     text-align: justify;
 }
+
+
+/*   Seccion Cole Webley   */
+
+.coleWebley{
+
+    
+    padding: 20px;
+
+}
+.videoColeWebley{
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    z-index: -2;
+    
+
+}
+.videoConBoton{
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    height: 50%;
+    overflow: hidden;
+}
+.botonVideo{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+.debajoVideo{
+    justify-content: start;
+    text-align: start;
+    margin-top: 20px;
+    text-align: start;
+    
+}
+.debajoVideo h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.debajoVideo p{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+.videosPerfectosParaTodos{
+
+    margin-top: 40px;
+
+
+}
+.videosPerfectosParaTodos h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.videosPerfectosParaTodos>p{
+    font-size: 15px;
+    color: rgba(39, 39, 39, 0.774);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.btnPlanes{
+    background-color: rgb(15, 15, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: fit-content;
+    font-weight: 600;
+    border-radius: 20px;
+
+}
+.btnPlanes p{
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    
+}
