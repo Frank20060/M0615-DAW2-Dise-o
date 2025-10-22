@@ -187,13 +187,38 @@ header img{
 }
 
 
-/*  Seccion de las imagenes que van moviendose (No se de donde sacar las imagenes)*/
+.carrusel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 
-.carruselImagenes{
-    padding-top: 20px;
-    background-color: red;
-    height: 30vh;
-    width: 100vw;
+  /* Difuminado en bordes ---- Lo he buscado en internet, No sabia hacerlo*/
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.carruselImagenes {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  position: relative;
+  padding: 20px;
+  transition: ease;
+  animation: deslizar 10s linear infinite;
+}
+
+.carruselImagenes img {
+  width: 70px;
+}
+
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 
@@ -359,6 +384,8 @@ header img{
 }
 
 
+
+
 /*  Seccion card de los planes  */
 
 .cardPlan{
@@ -374,6 +401,103 @@ header img{
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+
+.loQueNosDicen{
+    background-color: rgb(230, 243, 255);
+    padding: 20px;
+    padding-top: 40px;
+}
+.loQueNosDicen>h2{
+    padding-bottom: 20px;
+    justify-self: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*Carrusel comentarios*/
+
+.carruselCards{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: relative;
+    padding: 20px;
+    transition: ease;
+    animation: deslizar 10s linear infinite;
+}
+
+
+
+/*que las cards del carrusel parezcan cards*/
+.cardCarrusel {
+    background-color: white;
+    border-radius: 10px; 
+    padding: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 500px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardCarrusel p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.estrellas {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.estrellas img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.infomacionPersonal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infomacionPersonal1 {
+    display: flex;
+    align-items: center;
+}
+
+.infomacionPersonal1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.infomacionPersonal1 p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+}
+
+.infomacionPersonal2 img {
+    width: 60px;
+    height: auto;
+}
+
+
+
+
+
+
 
 .ia{
     padding: 15px;
