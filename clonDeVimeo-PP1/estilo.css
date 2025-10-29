@@ -171,13 +171,12 @@ header img{
 }
 
 .carrusel {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-
-  /* Difuminado en bordes ---- Lo he buscado en internet, No sabia hacerlo*/
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    overflow: hidden;
+    position: relative;
+    
+    /* Difuminado en bordes ---- Lo he buscado en internet, No sabia hacerlo*/
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .carruselImagenes {
@@ -818,7 +817,6 @@ header img{
     .introduccionContenido{
         align-content: center;
         justify-content: center;
-        
         justify-content: center;
     }
     .introduccionContenido p, .introduccionContenido h3{
@@ -859,5 +857,49 @@ header img{
         margin-bottom: auto;
     }
 
+    .seccionConfianza{
+        margin-top: 100px;
+    }
 
+    .seccionConfianza p{
+        width: 480px;
+        justify-self: center;
+        margin-bottom: 20px;
+    }
+    .carruselImagenes {
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+        position: relative;
+        padding: 20px;
+        transition: linear;
+        animation: deslizar 20s linear infinite;
+    }
+
+
+
+
+    .seccionDisenado{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .seccionDisenado h1{
+
+        font-size: 35px;
+
+    }
+    .seccionDisenado p{
+        width: 520px;
+        margin-bottom: 50px;
+    }
+    .seccionPlataformaQueImpulsa{
+        width: 100vw;
+        justify-self: center;
+    }
+
+
+    .seccionPlataformaQueImpulsa>div div{
+        width: 200px;
+    }
+    
 }
