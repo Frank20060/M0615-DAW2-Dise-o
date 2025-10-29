@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family:  Montserrat;
 }
-
 header{
     box-sizing: border-box;
     display: flex;
@@ -38,21 +37,15 @@ header div{
     padding: 15px 0px;
     font-size: 15px;
     width: fit-content;
-    
-
 }
 header .join{
-
     background-color: rgba(207, 207, 207, 0.603);
     border-radius: 10px;
     padding-left : 20px;
     padding-right : 20px;
-
 }
 header img{
-
     width: 30px;
-
 }
 
 /*  introduccion    */
@@ -69,8 +62,7 @@ header img{
     padding-top: 50px;
     position: relative;
     overflow: hidden;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  
 }
 /*Video fondo*/
 .video-bg {
@@ -82,14 +74,14 @@ header img{
     object-fit: cover;
     z-index: 0;
     border-radius: 20px;
+    filter: brightness(50%);
+
 }
 .introduccionContenido, .btnPlay {
     position: relative;
     z-index: 1;
 }
-
 .introduccionContenido{
-
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -98,16 +90,13 @@ header img{
     height: 50vh;
     padding: 20px 20px 20px 0px;
     gap: 20px;
-
 }
 .introduccionContenido h1{
-
     padding:  0px 40px;
     justify-content: center;
     text-align: center;
     width: 90%;    
     font-size: 30px;
-
 }
 .introduccionContenido p{
     padding:  0px 40px;
@@ -115,21 +104,18 @@ header img{
     text-align: center;
     width: 90%;
     font-size: 15px;
-
+    font-weight: 500;
 }
 .introduccionContenido h3{
-    
-    font-weight: 300;
+    font-weight: 500;
     font-size: 13px;
 }
 
 .btnsIntro{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 .btnsIntro button{
 
@@ -140,8 +126,6 @@ header img{
     border: none;
     border-radius: 10px;
     font-weight: 700;
-
-
 }
 #btnIntro1{
     background-color: rgb(51, 180, 255);
@@ -151,10 +135,11 @@ header img{
     background-color: transparent;
     color: white;
 }
-
+.btnPlayVideoInicio{
+    align-self: flex-end;
+}
 .btnPlay{
     display: flex;
-    align-self: flex-end;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
@@ -174,7 +159,6 @@ header img{
 
 }
 
-
 /*  Seccion de confianza  */
 
 .seccionConfianza{
@@ -185,7 +169,6 @@ header img{
     margin: 20px;
 
 }
-
 
 .carrusel {
   width: 100%;
@@ -221,7 +204,6 @@ header img{
   }
 }
 
-
 /*  Seccion de Diseñado  */
 
 .seccionDisenado{
@@ -252,7 +234,6 @@ header img{
     font-weight: 500;
     font-size: 15px;
 }
-
 
 /*  Seccion plataforma que IMpulsa  */
 
@@ -296,7 +277,6 @@ header img{
 
     text-align: justify;
 }
-
 
 /*   Seccion Cole Webley   */
 
@@ -383,9 +363,6 @@ header img{
     
 }
 
-
-
-
 /*  Seccion card de los planes  */
 
 .cardPlan{
@@ -401,8 +378,6 @@ header img{
     font-weight: 600;
     margin-bottom: 10px;
 }
-
-
 .loQueNosDicen{
     background-color: rgb(230, 243, 255);
     padding: 20px;
@@ -415,9 +390,7 @@ header img{
     font-size: 18px;
     font-weight: 600;
 }
-
 /*Carrusel comentarios*/
-
 .carruselCards{
     display: flex;
     flex-direction: row;
@@ -427,8 +400,6 @@ header img{
     transition: ease;
     animation: deslizar 10s linear infinite;
 }
-
-
 
 /*que las cards del carrusel parezcan cards*/
 .cardCarrusel {
@@ -444,7 +415,6 @@ header img{
     flex-direction: column;
     justify-content: space-between;
 }
-
 .cardCarrusel p {
     font-size: 18px;
     color: #333;
@@ -452,52 +422,39 @@ header img{
     font-weight: 500;
     margin-bottom: 10px;
 }
-
 .estrellas {
     display: flex;
     margin-bottom: 10px;
 }
-
 .estrellas img {
     width: 20px;
     height: 20px;
     margin-right: 5px;
 }
-
 .infomacionPersonal {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .infomacionPersonal1 {
     display: flex;
     align-items: center;
 }
-
 .infomacionPersonal1 img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
 }
-
 .infomacionPersonal1 p {
     font-weight: 500;
     font-size: 16px;
     color: #333;
 }
-
 .infomacionPersonal2 img {
     width: 60px;
     height: auto;
 }
-
-
-
-
-
-
 
 .ia{
     padding: 15px;
@@ -528,7 +485,6 @@ header img{
     
 
 }
-
 .cardOpcionIA{
     margin-top: 30px;
     background-color: rgb(24, 24, 31);
@@ -562,8 +518,6 @@ header img{
     margin-top: 20px;
     align-items: center;
 }
-
-
 .SeguridadEscalabilidad{
     padding: 20px;
 }
@@ -600,7 +554,6 @@ header img{
 
     font-size: 10px;
 }
-
 .tranquilidadCras{
     margin-top: 30px;
     display: grid;
@@ -615,8 +568,6 @@ header img{
     text-align: center;
     
 }
-
-
 .unaseComunidad{
     padding: 20px;
     background-color: rgb(26, 26, 36);
@@ -639,14 +590,9 @@ header img{
 }
 
 
-
-
-
-
-
-
-
 /*FOOTER*/
+
+
 .pieDePagina{
     background: #fbfbfb;
     color: #394149;
@@ -685,7 +631,6 @@ header img{
     border-radius: 6px;
     text-decoration: none;
 }
-
 .filaIdioma{
     display: flex;
     align-items: center;
@@ -701,13 +646,11 @@ header img{
     font-size: 13px;
     color: #222;
 }
-
 .textoDerechos{
     color: #5a6168;
     line-height: 1.4;
     margin-top: 6px;
 }
-
 /* Enlaces legales */
 .enlacesLegales{
     display: flex;
@@ -729,13 +672,10 @@ header img{
     color: #9aa0a6;
     font-weight: 400;
 }
-
 .ultimo{
-
     justify-items: center;
     padding: 20px;
-    text-align: center;
-    
+    text-align: center;   
 }
 .ultimo h1{
     font-size: 30px;
@@ -773,4 +713,151 @@ header img{
     width: 100%;
     border-radius: 10px;
     margin: 20px;
+}
+
+
+.oculto{
+    display: none;
+}
+.ocultoReves{
+    display: block;
+}
+.ocultoFlex{
+    display: flex;
+}
+@media (min-width: 1000px) {
+    .oculto{
+        display: block;
+    }
+    .ocultoReves{
+        display: none;
+    }
+    .ocultoFlex{
+        display: block;
+    }
+    
+    /*NAV MAS O MENOS*/
+    body{
+        width: 1400px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        
+    }
+    header{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 12vh;
+        align-items: center;
+        padding: 20px 200px 20px 200px;
+        position: fixed;
+        top: 0;            
+        left: 0;            
+        right: 0;
+        z-index: 1000;        
+        background: rgba(249, 249, 249, 0.591);
+        backdrop-filter: blur(5px); 
+        border-radius: 0px 0px 20px 20px;
+    }
+    .parte1nav{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .navOculto{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-left: 50px;
+        justify-self: left;
+        align-items: center;
+        font-weight: 600;
+
+    }
+    .navOculto div{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-self: left;
+        align-items: center;
+        
+
+    }
+    .navOculto div>img{
+
+        height: 20px;
+        width: 20px;
+        margin: none;
+
+    }
+    header nav{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }  
+    .join img{
+        transform: rotate(-90deg); 
+        height: 20px;
+        width: 20px;
+
+    } 
+    .join{
+        align-items: center;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+    /*seccion con video bagraun*/
+
+    .introduccionContenido{
+        align-content: center;
+        justify-content: center;
+        
+        justify-content: center;
+    }
+    .introduccionContenido p, .introduccionContenido h3{
+        font-size: 1.4em;
+        width: 600px;
+        justify-self: center;
+        text-align: center;
+    }
+    .introduccionContenido h1{
+        font-size: 50px;
+        width: 410px;
+    }
+    .btnPlayVideoInicio{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: rgba(172, 172, 172, 0.747);
+        z-index: 2;
+        margin: 20px;
+        height: 150px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        color: black;
+        border-radius: 20px;
+        text-shadow: none;
+    }
+    .btnPlayVideoInicio p{
+        padding: 20px;
+        padding-right: 60px;
+    }
+
+    .btnPlay{
+        width: 120px;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+
 }
