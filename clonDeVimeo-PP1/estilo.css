@@ -587,6 +587,10 @@ header img{
     justify-items: center;
     
 }
+.unaseComunidad>div{
+    display: flex;
+    flex-direction: column;
+}
 .unaseComunidad h1{
     font-size: 25px;
     width: 80%;
@@ -1054,5 +1058,130 @@ header img{
         width: 600px;
     }
 
+    .seccionSeguridad{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .seguridadTranquilidad{
+        order: -1;
+        display: flex;
+        flex-direction: row;
+    }
+    .SeguridadMain{
+        width: 50%;
+        text-align: start;
+        
+    }
+    .SeguridadMain h1{
+        font-size: 35px;
+    }
+    .SeguridadMain div{
+        width: 300px;
+    }
+    .tranquilidad{
+        width: 50%;
+        margin-top: 20px;
+    }
+    .tranquilidadCras{
+        grid-template-rows: repeat(2, auto); 
+        
+    }
+    .SeguridadEscalabilidad{
+        order: 1;
+    }
+    .SeguridadEscalabilidad>div{
+        width: 100%;
+    }
+
+    .SeguridadEscalabilidad .btnPlayVideoInicio{
+        
+        margin-top: 280px;
+
+    }
+
+    .unaseComunidad {
+        display: flex;            
+        flex-direction: row; 
+        justify-self: center;     
+        justify-content: center;  
+        align-items: center;      
+        width: 100vw;
+        height: 700px;
+        gap: 20px;                
+    }
+
+    .unaseComunidad {
+        display: flex;            
+        flex-direction: row;      
+        justify-content: center;  
+        align-items: center;
+        text-align: start;
+        width: 100vw;
+        height: 700px;
+        gap: 20px;                
+    }
+
+    .unaseComunidad > div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px; 
+        width: 500px;
+    }
+
+    .unaseComunidad h1 {
+        width: 500px;
+        padding: 0px;
+        margin: 0px;
+        font-size: 35px;
+    }
+
+    .unaseComunidad p {
+        width: 500px; 
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    .unaseComunidad > div > div {
+        width: 500px;
+        cursor: pointer;
+        padding-left: 20px;
+    }
+    .headIAVideo {
+        width: 600px;
+        border-radius: 20px;
+        order: -1;              
+        object-fit: cover;     
+        margin: 20px;   
+    }
+    .ultimo>div{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }   
+    .cardUltimo{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+    .btnVerMas p{
+        width: 80px;
+    }
+    .btnVerMas{
+        width: fit-content;
+    }
+    .cardUltimo img{
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .pieDePagina{
+        width: 100vw;
+        justify-self: center;
+    }
 
 }
