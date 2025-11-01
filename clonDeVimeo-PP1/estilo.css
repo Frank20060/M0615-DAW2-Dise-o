@@ -5,7 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family:  Montserrat;
+    
 }
+html, body {
+    overflow-x: hidden;
+}
+
+
 header{
     box-sizing: border-box;
     display: flex;
@@ -171,12 +177,13 @@ header img{
 }
 
 .carrusel {
-    overflow: hidden;
-    position: relative;
+    width: 100%;
     
-    /* Difuminado en bordes ---- Lo he buscado en internet, No sabia hacerlo*/
+    position: relative;
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+
+    
 }
 
 .carruselImagenes {
@@ -280,7 +287,8 @@ header img{
 /*   Seccion Cole Webley   */
 
 .coleWebley{
-
+    display: flex;
+    flex-direction: column;
     
     padding: 20px;
 
@@ -378,6 +386,7 @@ header img{
     margin-bottom: 10px;
 }
 .loQueNosDicen{
+    overflow: hidden;
     background-color: rgb(230, 243, 255);
     padding: 20px;
     padding-top: 40px;
@@ -391,14 +400,16 @@ header img{
 }
 /*Carrusel comentarios*/
 .carruselCards{
+    width: 2000px;
     display: flex;
     flex-direction: row;
     gap: 40px;
     position: relative;
     padding: 20px;
     transition: ease;
-    animation: deslizar 10s linear infinite;
+    animation: deslizar 20s linear infinite;
 }
+
 
 /*que las cards del carrusel parezcan cards*/
 .cardCarrusel {
@@ -408,6 +419,7 @@ header img{
     padding-top: 60px;
     padding-bottom: 60px;
     width: 500px; 
+    overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
     font-family: Arial, sans-serif;
     display: flex;
@@ -724,7 +736,12 @@ header img{
 .ocultoFlex{
     display: flex;
 }
+
+
 @media (min-width: 1000px) {
+    html{
+        overflow-x: visible;
+    }   
     .oculto{
         display: block;
     }
@@ -737,7 +754,7 @@ header img{
     
     /*NAV MAS O MENOS*/
     body{
-        width: 1400px;
+        width: 1000px;
         display: flex;
         flex-direction: column;
         justify-self: center;
@@ -896,10 +913,146 @@ header img{
         width: 100vw;
         justify-self: center;
     }
-
+    .seccionPlataformaQueImpulsa h1{
+           
+        margin-top: 40px;
+        font-size: 40px;
+    }
 
     .seccionPlataformaQueImpulsa>div div{
-        width: 200px;
+        width: 400px;
     }
     
+
+    .seccionPlataformaQueImpulsa > div {
+        text-align: start;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px; 
+        align-items: start;
+        padding: 40px;
+    }
+
+    .cardPadreVideo {
+        width: 100%;
+        
+    }
+
+    .btnMasInformacion {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #1e1e1e;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+
+    .btnMasInformacion img{
+        transform: rotate(-90deg); 
+        height: 20px;
+        width: 20px;
+
+    } 
+
+
+    /*Video coleeably*/
+
+    .coleWebley{
+        flex-direction: row; 
+        flex-wrap: wrap;    
+
+    }
+
+
+    .videosPerfectosParaTodos{
+        width: 100%;
+    }
+    .videosPerfectosParaTodos h1{
+        font-size: 40px;
+    }
+    .videosPerfectosParaTodos>p{
+        font-size: 23px;
+        padding: 5px;
+        width: 1000px;
+        font-weight: 600;
+    }
+    .btnPlanes{
+        width: 400px;
+        font-size: 40px;
+    }
+    .btnPlanes p{
+        
+        font-size: 20px;
+    }
+
+
+    .videoConBoton{
+        width: 600px;
+        height: 600px;
+        flex: 1;      
+        display: flex;
+        flex-direction: column;  
+    }
+    .debajoVideo.oculto{
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        background-color: #ffffffcf;
+        margin: 50px;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: auto;
+
+    }
+    .compañeroDeVideo, .divDelVideo{
+        flex: 1; 
+    }
+    
+
+    .videosPerfectosParaTodos{
+        order: -1; 
+    }
+    .porEncima{
+        z-index: 3;
+    }
+
+
+
+    /*  Segundo carrusel  */
+    .loQueNosDicen{
+        width: 100vw;
+        justify-self: center;
+    }
+    .carrusel{
+        overflow: hidden;
+    }
+
+    .ia {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-self: center;
+        justify-content: center;
+        padding-bottom: 60px;
+        
+    }
+    .headIA{
+        width: 40%;
+    }
+    .headIAVideo{
+        width: 90%;
+        justify-self: center;
+    }
+    details{
+        cursor: pointer;
+    }   
+    .cardOpcionIA{
+        width: 600px;
+    }
+
+
 }
