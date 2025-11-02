@@ -24,7 +24,7 @@ header{
     top: 0;            
     left: 0;            
     right: 0;
-    z-index: 1000;        
+    z-index: 10000;        
     background: rgba(249, 249, 249, 0.591);
     backdrop-filter: blur(5px); 
     border-radius: 0px 0px 20px 20px;
@@ -1183,5 +1183,128 @@ header img{
         width: 100vw;
         justify-self: center;
     }
+
+
+
+    /**nav con hovers**/
+
+
+    /* Cada menu */
+    .menu {
+        position: absolute;
+        top:12vh;
+        left: 0px;  
+        height: 88vh;
+        width: 100vw;
+        background: rgba(255, 255, 255, 0.664);
+        transition: all 1s linear;
+        justify-content: center;
+        
+    }
+    .menu>div{
+        position: absolute;
+        top: 0px;
+        margin-top:0px;
+        gap: 60px;
+        background-color: white;
+        padding: 100px;
+        border-radius: 50px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .menu>div div{
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* Columnas */
+    .col h3 {
+        font-size: 16px;
+        color: #111;
+        margin-bottom: 10px;
+    }
+
+    .col ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .col li {
+        color: #333;
+        font-size: 14px;
+        margin: 6px 0;
+        cursor: pointer;
+    }
+
+    /* Imagen y enlace */
+    .preview {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .link {
+        font-weight: bold;
+        color: #111;
+        text-align: center;
+        cursor: pointer;
+    }
+
+
+    /* Oculto por defecto */
+    .menu1.menu {
+        display: none;
+    }
+    .menu2.menu {
+        display: none;
+    }
+    .menu3.menu {
+        display: none;
+    }
+
+
+    /* Mostrar solo al hacer hover en su contenedor */
+    .menuHover1:hover, .menuHover2:hover, .menuHover3:hover{
+        border-radius: 20px;
+        background-color: rgba(193, 193, 193, 0.931);
+    }
+    .menuHover1:hover .menu1 {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        &.menu1>div{
+            display: flex;
+            flex-direction: row;
+        }
+        
+    }
+
+    .menuHover2:hover .menu2 {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        &.menu2>div{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        
+    }
+
+    .menuHover3:hover .menu3 {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        &.menu3>div{
+            display: flex;
+            flex-direction: row;
+
+        }
+        
+    }
+
+        
 
 }
