@@ -1305,6 +1305,188 @@ header img{
         
     }
 
+
+    /*hovers de los botones*/
+
+    #btnIntro1:hover{
+        background-color: rgb(0, 111, 162);
+    }
+
+    #btnIntro1 {
+        background: linear-gradient(to right, rgb(51, 180, 255) 50%,  rgb(41, 144, 204)50%);
+        background-size: 200% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+    }
+
+    #btnIntro1:hover {
+        background-position: right;
+        gap: 20px;
+    }
+
+    #btnIntro2 {
+        width: 300px;
+        height: 50px;
+        color: white ;
+        
+        transition: all 0.2s linear;
+    }
+
+    #btnIntro2:hover {
+        color: #91979db5;
+        gap: 20px;
+    }
+
+
+    .btnPlayVideoInicio{
+        background: linear-gradient(to right, rgba(172, 172, 172, 0.747) 50%,  rgba(52, 52, 52, 0.577)50%);
+        background-size: 200% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+        
+    }
+    .btnPlayVideoInicio .btnPlay{
+        background: linear-gradient(to right, rgb(51, 180, 255) 50%,  rgba(0, 0, 0, 0.577)50%);
+        background-size: 210% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+    }
+    .btnPlayVideoInicio:hover {
+        background-position: right;
+        color: white;
+       
+    }
+    .btnPlayVideoInicio:hover .btnPlay{
+        background-position: right;
+    }
+
+
+    .seccionDisenado button{
+        background: linear-gradient(to right, rgb(51, 180, 255) 50%,  rgb(41, 144, 204)50%);
+        background-size: 200% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+
+        &:hover {
+            background-position: right;
+        }
+    }    
+    
+
+    .btnMasInformacion{
+        
+        background: linear-gradient(to right, #1e1e1e 50%,  white 50%);
+        background-size: 200% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+        color: white;
+        &:hover {
+            background-position: right;
+            color: black;
+        }
         
 
+    }
+    .btnPlanes{
+        background: linear-gradient(to right, #000000 50%,  white 50%);
+        background-size: 200% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+        color: rgb(255, 255, 255);
+        &:hover {
+            background-position: right;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            & p{
+                color: #000000;
+                
+            }
+        }
+
+    }
+    .btnIA{
+        
+        background: linear-gradient(to right, #1e1e1e 50%,  white 50%);
+        background-size: 200% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+        color: white;
+        &:hover {
+            background-position: right;
+            color: black;
+        }
+        
+
+    }
+
+    .btnSeguridad{
+        background: linear-gradient(to right, #000000 50%,  white 50%);
+        background-size: 200% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+        color: rgb(255, 255, 255);
+        &:hover {
+            background-position: right;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            & p{
+                color: #000000;
+                
+            }
+        }
+
+    }
+
+    .btnComunidad{
+        background: linear-gradient(to right, rgb(26, 26, 36) 50%,  white 50%);
+        background-size: 200% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        &:hover {
+            background-position: right;
+            color: black;
+        }
+    }
+    .btnVerMas{
+        background: linear-gradient(to right, #000000 50%,  white 50%);
+        background-size: 200% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+        color: rgb(255, 255, 255); 
+    }
+    .cardUltimo:hover .btnVerMas{
+        background-position: right;
+        color: black;
+    }
+
+
+    .coleWebley .debajoVideo{
+        background: linear-gradient(to right, rgba(172, 172, 172, 0.747) 50%,  rgba(0, 0, 0, 0.577)50%);
+        background-size: 210% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+        &:hover {
+        background-position: right;
+        color: white;
+       
+        }
+    }
+    .coleWebley .debajoVideo .btnPlay{
+        background: linear-gradient(to right, rgb(51, 180, 255) 50%,  rgba(0, 0, 0, 0.577)50%);
+        box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+        background-size: 210% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+        
+    }
+    .coleWebley .debajoVideo:hover .btnPlay{
+        background-position: right;
+    }
+
+
+
+
+
 }
+
