@@ -1359,9 +1359,12 @@ header img{
         color: white;
        
     }
-    .btnPlayVideoInicio:hover .btnPlay{
+    .btnPlay{
         background-position: right;
+        
+       
     }
+    
 
 
     .seccionDisenado button{
@@ -1387,7 +1390,11 @@ header img{
         &:hover {
             background-position: right;
             color: black;
+            
         }
+        &:hover img{
+            animation: rodar 0.5s linear;
+        }}
         
 
     }
@@ -1496,8 +1503,26 @@ header img{
     }
 
 
+    .join{
+        
+        background: linear-gradient(to right, rgba(207, 207, 207, 0.603) 50%,  rgb(51, 180, 255)50%);
+        background-size: 210% 100%;
+        background-position: left;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        &:hover{
+           background-position: right; 
+        }
+    }
+    .join:hover img{
+        animation: rodar 0.5s linear;
+    }
+
+    @keyframes rodar {
+        100% {
+            transform: rotate(270deg);
+        }
+    }
 
 
-
-}
 
