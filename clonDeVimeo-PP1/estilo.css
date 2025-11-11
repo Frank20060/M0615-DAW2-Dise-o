@@ -1280,6 +1280,16 @@ header img{
         }
         
     }
+    .menuHover1>img,.menuHover2>img, .menuHover3>img{
+    
+        transition: all 0.5s ease;
+    
+    }
+    .menuHover1:hover>img,.menuHover2:hover>img, .menuHover3:hover>img{
+        transform: rotate(-180deg);
+     
+    }
+
 
     .menuHover2:hover .menu2 {
         display: flex;
@@ -1340,7 +1350,7 @@ header img{
 
 
     .btnPlayVideoInicio{
-        background: linear-gradient(to right, rgba(172, 172, 172, 0.747) 50%,  rgba(52, 52, 52, 0.577)50%);
+        background: linear-gradient(to right, rgba(172, 172, 172, 0.747) 50%,  rgba(46, 46, 46, 0.644)50%);
         background-size: 200% 100%;
         background-position: left;
         transition: all 0.2s linear;
@@ -1348,7 +1358,7 @@ header img{
         
     }
     .btnPlayVideoInicio .btnPlay{
-        background: linear-gradient(to right, rgb(51, 180, 255) 50%,  rgba(0, 0, 0, 0.577)50%);
+        background: linear-gradient(to right, rgb(51, 180, 255) 50%,  rgb(0, 0, 0)50%);
         background-size: 210% 100%;
         background-position: left;
         transition: all 0.2s linear;
@@ -1490,7 +1500,7 @@ header img{
         }
     }
     .coleWebley .debajoVideo .btnPlay{
-        background: linear-gradient(to right, rgb(51, 180, 255) 50%,  rgba(0, 0, 0, 0.577)50%);
+        background: linear-gradient(to right, rgb(51, 180, 255) 50%,  rgb(0, 0, 0)50%);
         box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
         background-size: 210% 100%;
         background-position: left;
