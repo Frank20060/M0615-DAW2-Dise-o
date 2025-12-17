@@ -1,3 +1,59 @@
+Para usar los estilos:::: 
+# Tailwind Config Cheat Sheet
+
+## Colores
+divider = text-divider / bg-divider  
+sticker = text-sticker / bg-sticker  
+headline = text-headline  
+paragraph1 = text-paragraph1  
+paragraph2 = text-paragraph2  
+paragraph3 = text-paragraph3  
+link = text-link  
+buttonText = text-buttonText  
+bg1 = bg-bg1  
+bg2 = bg-bg2  
+bg3 = bg-bg3  
+bg4 = bg-bg4  
+bg5 = bg-bg5  
+
+## Font Family
+radioCanada = font-radioCanada  
+geistMono = font-geistMono  
+sourceSerif = font-sourceSerif  
+
+## Font Size
+nav = text-nav  
+btn = text-btn  
+caption = text-caption  
+h1 = text-h1  
+h2 = text-h2  
+h3 = text-h3  
+h4 = text-h4  
+p1Medium = text-p1Medium  
+p1 = text-p1  
+p2 = text-p2  
+pArticle = text-pArticle  
+
+## Background Image / Gradiente
+bg3-gradient = bg-bg3-gradient  
+
+## Font Weight
+regular = font-regular  
+medium = font-medium
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---Estilos texto----
 

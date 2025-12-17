@@ -1,7 +1,4 @@
-
 ///Aqui pongo las variables que quiero personalizar
-
-
 tailwind.config = {
   theme: {
     extend: {
@@ -9,9 +6,9 @@ tailwind.config = {
         divider: "#DBE0EC",
         sticker: "#2683EB",
         headline: "#000000",
-        paragraph1: "#000000",
-        paragraph2: "#6C6C6C",
-        paragraph3: "#66640F",
+        p1: "#000000",
+        p2: "#6C6C6C",
+        p3: "#66640F",
         link: "#2683EB",
         buttonText: "#FFFFFF",
         bg1: "#FFFFFF",
