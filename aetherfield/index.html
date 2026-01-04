@@ -8,25 +8,104 @@
     <script src="tailwind.config.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
+<body class="overflow-x-hidden w-full">
+  <!-- Header nav + bienvenida -->
+  <header class="flex flex-col bg-bg3-gradient px-4 py-6">
+    <div class="flex items-center justify-between w-full">
+      <div class="min-w-0">
+        <h1 class="font-radioCanada text-2xl font-extrabold">Aetherfield</h1>
+      </div>
+      <nav class="min-w-0">
+        <div>
+          <img class="w-6 h-6" src="img/menu/masMenu.svg" alt="menu">
+        </div>
+      </nav>
+    </div>
 
+    <!-- bienvenida -->
+
+    <div id="bienvenida" class="w-full px-4 flex flex-col justify-center items-center mt-10 text-center">
+      <h1 class="font-sourceSerif text-4xl ">Sustainability insights,</h1>
+      <h1 class="font-radioCanada font-medium text-4xl mt-2">built for business</h1>
+      <p class="font-sourceSerif text-pArticle mt-6 max-w-prose">Track impact, reduce emissions, and accelerate progress—with clarity and confidence.</p>
+
+      <div class="flex flex-col gap-4 items-center mt-8">
+        <button class="font-geistMono text-btn bg-bg5 text-buttonText px-8 py-3 rounded-none w-max">· Request a demo</button>
+        <button class="font-geistMono text-btn bg-bg5 text-buttonText px-8 py-3 rounded-none w-max">· Explore the platform</button>
+      </div>
+    </div>
+
+
+    <!-- dashboard -->
+    <!-- Lo pogo como imagen porque en el mockup de figma esta asi -->
+
+    <div id="dashboard" class="flex w-full justify-center mt-10">
+      <img src="img/dashboard/dashboard2.svg" alt="imagen de dashboard">
+    </div>
+    <!-- La imagen deveria de estar la mitad fuera del header pero no se -->
   </header>
   <main>
 
+    <section id="primeraSeccion" class="mt-7 flex flex-col justify-center text-center px-4">
+      <h1 class="font-radioCanada text-2xl font-semibold">
+        Everything you need to measure, model, and act on sustainability
+      </h1>
+
+      <img src="img/primeraSeccion/elTiempo.svg" alt="Imagen de la primera seccion" class="w-full mt-5 border-b-gray-300 border-b-2 pb-5">
+      
+      <div>
+        <div class="border-b-2 border-divider py-5 px-2">
+          <div class="flex items-start justify-between">
+            <h3 class="font-radioCanada text-2xl font-semibold">Track</h3>
+            <div class="font-geistMono text-caption text-2xl text-p2 text-right">001</div>
+          </div>
+          <p class="font-sourceSerif text-2xl leading-tight mt-3 text-left">Emissions, energy, and waste across your value chain</p>
+        </div>
+
+        <div class="border-b-2 border-divider py-5 px-2">
+          <div class="flex items-start justify-between">
+            <h3 class="font-radioCanada text-2xl font-semibold">Model</h3>
+            <div class="font-geistMono text-caption text-2xl text-p2 text-right">002</div>
+          </div>
+          <p class="font-sourceSerif text-2xl leading-tight mt-3 text-left">Forecast performance and goal alignment</p>
+        </div>
+
+        <div class="border-b-2 border-divider py-5 px-2">
+          <div class="flex items-start justify-between">
+            <h3 class="font-radioCanada text-2xl font-semibold">Report</h3>
+            <div class="font-geistMono text-caption text-2xl text-p2 text-right">002</div>
+          </div>
+          <p class="font-sourceSerif text-2xl leading-tight mt-3 text-left">Generate ESG disclosures, automate frameworks</p>
+        </div>
+
+        <div class="border-b-2 border-divider py-5 px-2">
+          <div class="flex items-start justify-between">
+            <h3 class="font-radioCanada text-2xl font-semibold">Act</h3>
+            <div class="font-geistMono text-caption text-2xl text-p2 text-right">004</div>
+          </div>
+          <p class="font-sourceSerif text-2xl leading-tight mt-3 text-left">Surface insights and operational next steps</p>
+        </div>
+        
+      </div>
+    </section>
+
+
+
   </main>
-  <footer class="bg-bg4 text-p3 w-screen p-3">
-    <div id="foot-nav" class=" flex flex-row gap-5 w-full justify-between m-3 mt-0">
+  <!-- Footer pero desktop version only-->
+  <!--
+  <footer class="bg-bg4 text-p3 w-full p-5">
+    <div id="foot-nav" class="flex flex-row gap-5 w-full justify-between pt-0 p-5 ">
       <nav class="flex ">
-        <ul class="flex flex-row gap-5">
-          <li>Product</li>
-          <li>Journal</li>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Get started</li>
+        <ul class="flex flex-row gap-5 font-bold">
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Get started</a></li>
         </ul>
       </nav>
-      <div class="font-sourceSerif fontSize-p2">
+      <div class="font-sourceSerif fontSize-p2 mr-5">
         © 2025  ·  Frank Villar Redondo
       </div>
     </div>
@@ -36,6 +115,6 @@
     <div m-1>
       <h1 class="text-center w-full text-[9vw] font-bold">Aetherfield</h1>
     </div>
-  </footer>
+  </footer> -->
 </body>
 </html>

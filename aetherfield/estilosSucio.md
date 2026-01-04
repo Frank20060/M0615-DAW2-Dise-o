@@ -5,9 +5,9 @@ Para usar los estilos::::
 divider = text-divider / bg-divider  
 sticker = text-sticker / bg-sticker  
 headline = text-headline  
-paragraph1 = text-paragraph1  
-paragraph2 = text-paragraph2  
-paragraph3 = text-paragraph3  
+paragraph1 = text-p1  
+paragraph2 = text-p2  
+paragraph3 = text-p3  
 link = text-link  
 buttonText = text-buttonText  
 bg1 = bg-bg1  
