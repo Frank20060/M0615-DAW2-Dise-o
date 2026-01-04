@@ -16,6 +16,7 @@ tailwind.config = {
         bg3: "#A8D3FF", // para gradiente usamos backgroundImage
         bg4: "#FFF546",
         bg5: "#000000",
+        customBeige: "#f5f5f0", // color beige personalizado de un fondo que deveria de ser una imagen pero no puedo descargarla
       },
       fontFamily: {
         radioCanada: ["'Radio Canada Big'", "sans-serif"],
