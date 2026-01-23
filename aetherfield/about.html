@@ -35,50 +35,56 @@
         </nav>
       </div>
     </header>
-    <div class="flex flex-col bg-bg3-gradient px-4 py-6">
-      <div
-        id="cardInicio"
-        class="flex flex-row align-middle justify-center gap-4 bg-white rounded-lg p-4 shadow-lg my-20"
-      >
-        <img
-          src="img/about/header/Image-2.svg"
-          alt="Imagen about"
-          class="w-30 h-20 my-auto"
-        />
-        <div id="textCard" class="flex flex-col gap-2">
-          <p
-            class="bg-yellow-400 w-fit rounded-full px-3 text-gray-500 font-geistMono font-semibold"
-          >
-            Forecast
-          </p>
-          <h1 class="font-bold">You're off your 2027 emission goals</h1>
-          <p class="text-xs font-geistMono font-semibold">
-            Adjust your targets ➔
-          </p>
-        </div>
-      </div>
-    </div>
+
     <main>
-      <section id="seccion1" class="px-4 my-6">
-        <p class="text-gray-400 font-semibold font-sourceSerif text-lg my-4">
-          Our mission
-        </p>
-        <h1 class="font-radioCanada font-semibold text-2xl">
-          Climate action starts with better information. We help organizations
-          turn complex data into measurable, meaningful change.
-        </h1>
-        <button
-          class="font-geistMono font-semibold text-btn bg-bg5 text-buttonText rounded-none w-full mt-10 my-5 py-5 px-2"
-        >
-          · Meet the team
-        </button>
-      </section>
+      <div class="lg:flex lg:flex-row">
+        <div class="flex flex-col bg-bg3-gradient px-4 py-6 lg:w-1/2">
+          <div
+            id="cardInicio"
+            class="flex flex-row align-middle justify-center gap-4 bg-white rounded-lg p-4 shadow-lg my-20 lg:w-fit lg:m-auto"
+          >
+            <img
+              src="img/about/header/Image-2.svg"
+              alt="Imagen about"
+              class="w-30 h-20 my-auto"
+            />
+            <div id="textCard" class="flex flex-col gap-2">
+              <p
+                class="bg-yellow-400 w-fit rounded-full px-3 text-gray-500 font-geistMono font-semibold"
+              >
+                Forecast
+              </p>
+              <h1 class="font-bold">You're off your 2027 emission goals</h1>
+              <p class="text-xs font-geistMono font-semibold">
+                Adjust your targets ➔
+              </p>
+            </div>
+          </div>
+        </div>
+        <section id="seccion1" class="px-4 my-6 lg:w-1/2 lg:p-28 lg:pr-32">
+          <p class="text-gray-400 font-semibold font-sourceSerif text-lg my-4">
+            Our mission
+          </p>
+          <h1 class="font-radioCanada font-semibold text-2xl">
+            Climate action starts with better information. We help organizations
+            turn complex data into measurable, meaningful change.
+          </h1>
+          <button
+            class="font-geistMono font-semibold text-btn bg-bg5 text-buttonText rounded-none w-full mt-10 my-5 py-5 px-2"
+          >
+            · Meet the team
+          </button>
+        </section>
+      </div>
+
       <section id="ourValues" class="px-4 w-full flex flex-col justify-center">
         <h1 class="font-radioCanada font-semibold text-2xl mx-auto">
           Our values
         </h1>
-        <div class="text-left pb-10">
-          <div class="bg-gray-200 rounded-2xl p-10 flex flex-col gap-5 mt-10">
+        <div class="text-left pb-10 lg:flex lg:flex-row lg:gap-10">
+          <div
+            class="bg-gray-200 rounded-2xl p-10 flex flex-col gap-5 mt-10 lg:mt-5"
+          >
             <img
               src="img/index/iconosSeccion2/1.svg"
               alt="icono de la card"
@@ -123,166 +129,201 @@
           </div>
         </div>
       </section>
-      <section id="seccion2" class="px-4 my-6">
+      <section id="seccion2" class="px-4 my-6 grid grid-cols-1 lg:grid-cols-2">
         <img
           src="img/about/seccion2/Image.svg"
           alt="Imagen about"
-          class="w-full"
+          class="w-full lg:p-10"
         />
-        <p
-          class="w-full font-sourceSerif text-2xl text-gray-500 font-light text-start mt-5"
-        >
-          Founder’s story
-        </p>
-        <h1 class="font-radioCanada font-semibold text-4xl">Eunji Park</h1>
-        <p class="w-full font-sourceSerif font-light text-xl text-start mt-6">
-          Eunji founded Aetherfield with one goal: to help companies take
-          climate action without waiting for a perfect plan. With a background
-          in environmental systems and software design, she’s spent the past
-          decade building tools that turn impact goals into real-world outcomes.
-          She still insists on biking to every investor meeting.
-        </p>
+        <div class="lg:m-auto lg:w-1/2">
+          <p
+            class="w-full font-sourceSerif text-2xl text-gray-500 font-light text-start mt-5"
+          >
+            Founder’s story
+          </p>
+          <h1 class="font-radioCanada font-semibold text-4xl">Eunji Park</h1>
+          <p class="w-full font-sourceSerif font-light text-xl text-start mt-6">
+            Eunji founded Aetherfield with one goal: to help companies take
+            climate action without waiting for a perfect plan. With a background
+            in environmental systems and software design, she’s spent the past
+            decade building tools that turn impact goals into real-world
+            outcomes. She still insists on biking to every investor meeting.
+          </p>
+        </div>
       </section>
 
       <section
         id="seccion3Team"
-        class="w-full px-4 font-sans text-s bg-gray-100 py-5 font-sourceSerif"
+        class="w-full px-4 py-8 bg-gray-100 font-sourceSerif"
       >
         <!-- Title -->
         <h2
-          class="font-radioCanada text-2xl font-bold pb-4 mb-4 border-b border-solid border-gray-400"
+          class="font-radioCanada text-2xl font-bold pb-4 mb-6 border-b border-gray-300"
         >
           Meet the team
         </h2>
 
+        <!-- Header row (solo desktop) -->
+        <div
+          class="hidden md:grid md:grid-cols-3 md:gap-4 pb-4 mb-4 border-b border-gray-300 font-geistMono text-gray-500 text-sm"
+        >
+          <p>NAME</p>
+          <p>TITLE</p>
+          <p class="md:text-right md:pr-5">CONTACT</p>
+        </div>
+
         <!-- Person -->
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Eunji Park</p>
           <p class="text-gray-600">Founder</p>
           <a
             href="mailto:e.park@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             e.park@atherfield.com
           </a>
         </div>
 
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Al Gorrham</p>
           <p class="text-gray-600">Senior Systems Architect</p>
           <a
             href="mailto:a.gorrham@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             a.gorrham@atherfield.com
           </a>
         </div>
 
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Cassandra Query</p>
           <p class="text-gray-600">Head of Data Platforms</p>
           <a
             href="mailto:c.query@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             c.query@atherfield.com
           </a>
         </div>
 
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Sue Logic</p>
           <p class="text-gray-600">Principal Software Engineer</p>
           <a
             href="mailto:s.logic@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             s.logic@atherfield.com
           </a>
         </div>
 
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Dash Bordman</p>
           <p class="text-gray-600">Product Manager</p>
           <a
             href="mailto:d.bordman@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             d.bordman@atherfield.com
           </a>
         </div>
 
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Greta Watt</p>
           <p class="text-gray-600">Director of Climate Strategy</p>
           <a
             href="mailto:g.watt@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             g.watt@atherfield.com
           </a>
         </div>
 
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Gail Force</p>
           <p class="text-gray-600">Environmental Risk Analyst</p>
           <a
             href="mailto:g.force@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             g.force@atherfield.com
           </a>
         </div>
 
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Polly Nation</p>
           <p class="text-gray-600">UX Designer</p>
           <a
             href="mailto:p.nation@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             p.nation@atherfield.com
           </a>
         </div>
 
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Will O’Watt</p>
           <p class="text-gray-600">Clean Energy Solutions Manager</p>
           <a
             href="mailto:w.owatt@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             w.owatt@atherfield.com
           </a>
         </div>
 
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Lana Terra</p>
           <p class="text-gray-600">Earth Systems Research</p>
           <a
             href="mailto:l.terra@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             l.terra@atherfield.com
           </a>
         </div>
 
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Elva Vision</p>
           <p class="text-gray-600">Earth Systems Researcher</p>
           <a
             href="mailto:e.vision@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             e.vision@atherfield.com
           </a>
         </div>
 
-        <div class="mb-4 border-b border-solid border-gray-400 pb-5">
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-4 py-4 border-b border-gray-300"
+        >
           <p class="font-radioCanada font-semibold">Phil Scope</p>
           <p class="text-gray-600">Lifecycle Assessment Lead</p>
           <a
             href="mailto:p.scope@atherfield.com"
-            class="text-gray-500 underline"
+            class="text-gray-500 underline md:text-right md:pr-5"
           >
             p.scope@atherfield.com
           </a>
@@ -291,9 +332,9 @@
 
       <section
         id="seccion4BtnFinal"
-        class="flex flex-col gap-4 items-center pb-8 px-10"
+        class="flex flex-col gap-4 items-center pb-8 px-10 md:py-20"
       >
-        <h1 class="font-radioCanada font-bold text-xl mt-8 w-full text-center">
+        <h1 class="font-radioCanada font-bold text-xl md:text-2xl lg:text-3xl mt-8 w-full text-center">
           We’re hiring! Want to join the team?
         </h1>
         <button
