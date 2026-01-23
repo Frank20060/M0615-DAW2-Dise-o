@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -8,34 +8,38 @@
     <script src="tailwind.config.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="overflow-x-hidden w-full bg-bg3-gradient bg-no-repeat bg-cover">
-    <main
-      class="overflow-x-hidden w-full bg-bg3-gradient bg-no-repeat bg-cover"
+  <body
+    class="overflow-x-hidden pt-24 w-full bg-bg3-gradient bg-no-repeat bg-cover"
+  >
+    <!-- Header nav -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md px-4 py-6"
     >
-      <!-- Header nav + bienvenida -->
-      <div class="flex flex-col px-4 py-6">
-        <div class="flex items-center justify-between w-full">
-          <div class="min-w-0">
-            <h1 class="font-radioCanada text-2xl font-extrabold">
-              Aetherfield
-            </h1>
-          </div>
-          <nav class="min-w-0">
+      <div class="flex items-center justify-between w-full">
+        <div class="min-w-0">
+          <h1 class="font-radioCanada text-2xl font-extrabold">Aetherfield</h1>
+        </div>
+
+        <nav class="min-w-0">
           <div class="md:hidden">
             <img class="w-6 h-6" src="img/index/menu/masMenu.svg" alt="menu" />
           </div>
+
           <div class="hidden md:block">
             <ul class="flex flex-row gap-6 font-semibold text-lg">
-              <li><a href="index.html">Product</a></li>
+              <li><a href="#">Product</a></li>
               <li><a href="journal.html">Journal</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="#">Careers</a></li>
+              <li><a href="careers.html">Careers</a></li>
               <li><a href="#">Get started ➔</a></li>
             </ul>
           </div>
         </nav>
-        </div>
       </div>
+    </header>
+    <main
+      class="overflow-x-hidden w-full bg-bg3-gradient bg-no-repeat bg-cover"
+    >
       <section class="w-full text-center">
         <h1 class="font-sourceSerif text-4xl mt-5">Careers at</h1>
         <h1 class="font-radioCanada font-bold text-4xl">Aetherfield</h1>
