@@ -8,10 +8,10 @@
     <script src="tailwind.config.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="overflow-x-hidden w-full pt-24">
+  <body class="overflow-x-hidden w-full">
   <!-- Header nav -->
   <header
-    class="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md px-4 py-6"
+    class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md px-4 py-6"
   >
     <div class="flex items-center justify-between w-full">
       <div class="min-w-0">
@@ -29,7 +29,7 @@
           />
         </div>
 
-        <div class="hidden md:block">
+        <div id="menuDesktop" class="hidden md:block">
           <ul class="flex flex-row gap-6 font-semibold text-lg">
             <li><a href="index.html">Product</a></li>
             <li><a href="journal.html">Journal</a></li>
@@ -38,15 +38,18 @@
             <li><a href="#">Get started ➔</a></li>
           </ul>
         </div>
+        <div id="menuHamburgerMobil">
+
+        </div>
       </nav>
     </div>
   </header>
 
       <!-- bienvenida -->
-
-      <div
+    <div class="bg-bg3-gradient pt-32">
+       <div
         id="bienvenida"
-        class="w-full px-4 flex flex-col justify-center items-center mt-10 text-center"
+        class="w-full pb-4 flex flex-col justify-center items-center text-center "
       >
         <h1 class="font-sourceSerif text-4xl md:text-5xl lg:text-6xl">
           Sustainability insights,
@@ -80,7 +83,7 @@
       <!-- dashboard -->
       <!-- Lo pongo como imagen porque en el mockup de figma esta asi -->
 
-      <div id="dashboard" class="flex w-full justify-center mt-10">
+      <div id="dashboard" class="flex w-full justify-center mt-10 pb-10">
         <img
           src="img/index/dashboard/dashboard2.svg"
           alt="imagen de dashboard"
@@ -98,6 +101,8 @@
         />
       </div>
       <!-- La imagen deveria de estar la mitad fuera del header pero no se -->
+    </div>
+     
     </header>
     <main>
       <!-- Primera seccion -->
