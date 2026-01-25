@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -8,12 +8,10 @@
     <script src="tailwind.config.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body
-    class="overflow-x-hidden  w-full bg-bg3-gradient bg-no-repeat bg-cover"
-  >
+  <body class="overflow-x-hidden w-full bg-bg3-gradient bg-no-repeat bg-cover">
     <!-- Checkbox oculto -->
     <input type="checkbox" id="menu-toggle" class="peer hidden" />
-    
+
     <!-- Header nav -->
     <header
       class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md px-4 py-6 peer-checked:bg-white transition-colors duration-300"
@@ -22,7 +20,9 @@
         <h1 class="font-radioCanada text-2xl font-extrabold">Aetherfield</h1>
 
         <label for="menu-toggle" class="cursor-pointer z-50">
-          <div class="transition-transform duration-300 peer-checked:-rotate-45">
+          <div
+            class="transition-transform duration-300 peer-checked:-rotate-45"
+          >
             <img class="w-6 h-6" src="img/index/menu/masMenu.svg" alt="menu" />
           </div>
         </label>
@@ -30,7 +30,9 @@
       <div class="hidden md:block">
         <div class="flex items-center justify-between w-full">
           <div class="min-w-0">
-            <h1 class="font-radioCanada text-2xl font-extrabold">Aetherfield</h1>
+            <h1 class="font-radioCanada text-2xl font-extrabold">
+              Aetherfield
+            </h1>
           </div>
 
           <nav class="min-w-0">
@@ -47,16 +49,33 @@
     </header>
 
     <!-- Menú móvil -->
-     <nav
-      class="fixed top-20 left-0 w-full bg-white/10 peer-checked:bg-white z-40 pt-6 px-4 overflow-hidden -translate-y-full peer-checked:translate-y-0 transition-all duration-500 md:hidden"
+    <nav
+      class="fixed top-0 left-0 w-full z-40 bg-white px-4 pt-6 overflow-hidden -translate-y-full peer-checked:translate-y-10 transition-all duration-500 md:hidden"
     >
-      <ul class="flex flex-col gap-6 font-semibold text-lg pb-6">
-        <li><a href="index.html">Product</a></li>
-        <li><a href="journal.html">Journal</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li class="pt-4">
-          <a href="#" class="font-bold">Get started ➔</a>
+      <ul class="flex flex-col text-2xl font-semibold">
+        <li class="py-4 border-b border-gray-300">
+          <a href="index.html">Product</a>
+        </li>
+
+        <li class="py-4 border-b border-gray-300">
+          <a href="journal.html">Journal</a>
+        </li>
+
+        <li class="py-4 border-b border-gray-300">
+          <a href="about.html">About</a>
+        </li>
+
+        <li class="py-4 border-b border-gray-300">
+          <a href="careers.html">Careers</a>
+        </li>
+
+        <li class="mt-6 pb-6">
+          <a
+            href="#"
+            class="block w-full bg-black text-white text-center py-4 font-bold font-geistMono"
+          >
+            Get started
+          </a>
         </li>
       </ul>
     </nav>
@@ -64,8 +83,12 @@
       class="overflow-x-hidden w-full bg-bg3-gradient bg-no-repeat bg-cover pt-24"
     >
       <section class="w-full text-center">
-        <h1 class="font-sourceSerif text-4xl md:text-5xl lg:text-6xl mt-5">Careers at</h1>
-        <h1 class="font-radioCanada font-bold text-4xl md:text-5xl lg:text-6xl">Aetherfield</h1>
+        <h1 class="font-sourceSerif text-4xl md:text-5xl lg:text-6xl mt-5">
+          Careers at
+        </h1>
+        <h1 class="font-radioCanada font-bold text-4xl md:text-5xl lg:text-6xl">
+          Aetherfield
+        </h1>
       </section>
       <section id="seccion1Cards" class="px-4 xl:px-80 mt-10">
         <!-- Card: UX Designer -->

@@ -8,7 +8,7 @@
     <script src="tailwind.config.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="overflow-x-hidden w-full">
+<body class="overflow-x-hidden w-full">
   
   <!-- Checkbox oculto -->
   <input type="checkbox" id="menu-toggle" class="peer hidden" />
@@ -52,21 +52,37 @@
       </div>
     </div>
   </header>
+  <!-- Menú móvil -->
+    <nav
+      class="fixed top-0 left-0 w-full z-40 bg-white px-4 pt-6 overflow-hidden -translate-y-full peer-checked:translate-y-10 transition-all duration-500 md:hidden"
+    >
+      <ul class="flex flex-col text-2xl font-semibold">
+        <li class="py-4 border-b border-gray-300">
+          <a href="index.html">Product</a>
+        </li>
 
-  <!-- Menú -->
-  <nav
-    class="fixed top-20 left-0 w-full bg-white/10 z-40 pt-6 sm:pt-0 px-4 overflow-hidden -translate-y-full peer-checked:translate-y-0 peer-checked:bg-white transition-all duration-500 md:hidden"
-  >
-    <ul class="flex flex-col gap-6 font-semibold text-lg pb-6">
-      <li><a href="index.html">Product</a></li>
-      <li><a href="journal.html">Journal</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="careers.html">Careers</a></li>
-      <li class="pt-4">
-        <a href="#" class="font-bold">Get started ➔</a>
-      </li>
-    </ul>
-  </nav>
+        <li class="py-4 border-b border-gray-300">
+          <a href="journal.html">Journal</a>
+        </li>
+
+        <li class="py-4 border-b border-gray-300">
+          <a href="about.html">About</a>
+        </li>
+
+        <li class="py-4 border-b border-gray-300">
+          <a href="careers.html">Careers</a>
+        </li>
+
+        <li class="mt-6 pb-6">
+          <a
+            href="#"
+            class="block w-full bg-black text-white text-center py-4 font-bold font-geistMono"
+          >
+            Get started
+          </a>
+        </li>
+      </ul>
+    </nav>
 
 
       <!-- bienvenida -->
