@@ -14,26 +14,26 @@
   <input type="checkbox" id="menu-toggle" class="peer hidden" />
   
   <!-- Header nav -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md px-4 py-6 peer-checked:bg-white transition-colors duration-300">
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md px-4 py-6 delay-500 peer-checked:bg-white peer-checked:delay-0  transition-colors ease-out">
     
     <div class="flex items-center justify-between w-full md:hidden">
       <h1 class="font-radioCanada text-2xl font-extrabold">
         Aetherfield
       </h1>
-
       <!-- Botón hamburguesa -->
       <label for="menu-toggle" class="cursor-pointer z-50">
-        <div class="transition-transform duration-300 peer-checked:-rotate-45">
+        <div class=" ">
           <img
           src="img/index/menu/masMenu.svg"
           alt="menu"
-          class="w-6 h-6"
+          class="w-6 h-6 transition-transform duration-300 hover:-opacity-50"
+          id="imgMenuClick"
         />
         </div>
       </label>
     </div>
     <div class="hidden md:block">
-      <div class=" items-center justify-between w-full  flex flex-row ">
+      <div class="items-center justify-between w-full flex flex-row ">
         <div class="min-w-0">
           <h1 class="font-radioCanada text-2xl font-extrabold">Aetherfield</h1>
         </div>
@@ -54,7 +54,7 @@
   </header>
   <!-- Menú móvil -->
     <nav
-      class="fixed top-0 left-0 w-full z-40 bg-white px-4 pt-6 overflow-hidden -translate-y-full peer-checked:translate-y-10 transition-all duration-500 md:hidden"
+      class="fixed top-20 left-0 w-full max-h-0 z-40 bg-white px-4 overflow-hidden peer-checked:max-h-screen transition-all duration-500 md:hidden ease-in"
     >
       <ul class="flex flex-col text-2xl font-semibold">
         <li class="py-4 border-b border-gray-300">
@@ -516,4 +516,17 @@
       </div>
     </footer>
   </body>
+  <script>
+    const menu = document.getElementById("menu-toggle")
+    const imgMenuClick = document.getElementById("imgMenuClick")
+
+    menu.addEventListener("change", () => {
+      if (menu.checked) {
+        imgMenuClick.classList.add("rotate-45")
+      } else {
+        imgMenuClick.classList.remove("rotate-45")
+      }
+    })
+
+  </script>
 </html>
