@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="flex flex-col">
+    <h1 class="text-3xl font-bold underline mb-10 mx-auto">
+      Hello world!
+    </h1>
+    <button class="p-2 bg-red-700 hover:scale-150 hover:bg-blue-700 transition-colors duration-500 linear  mx-auto ">HOLA</button>
+    
+
+    <!-- Icona que gira -->
+    <svg class="animate-spin h-5 w-5" viewBox="0 0 24 24">
+    <!-- Contingut SVG -->
+    </svg>
+
+    <!-- Loader -->
+    <div
+    class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"
+    ></div>
+
+
+    <!-- Punt que fa ping (útil per notificacions) -->
+    <span class="relative flex h-3 w-3">
+    <span
+        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"
+    ></span>
+    <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+    </span>
+
+
+
+
+    <!-- Element que pulsa -->
+    <div class="animate-pulse bg-gray-200 h-4 w-48 rounded"></div>
+
+    <!-- Skeleton loader -->
+    <div class="animate-pulse">
+    <div class="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
+    <div class="h-4 bg-gray-200 rounded w-1/2"></div>
+    </div>
+
+
+
+    <!-- Element que bota -->
+    <div class="animate-bounce">⚽</div>
+
+    
+    
+    
+    
+    <!-- Element a animar -->
+    <div class="opacity-0 translate-y-4 transition-all duration-500" data-animate>
+      <h2 class="text-3xl font-bold mb-4">Títol que apareix al scroll</h2>
+      <p class="text-gray-600">
+        Aquest contingut apareix gradualment quan fas scroll fins aquí.
+      </p>
+    </div>
+
+    <!-- Més contingut per forçar scroll -->
+    <div style="height: 100vh;"></div>
+
+    <!-- Altres elements amb animació -->
+    <div class="opacity-0 translate-y-4 transition-all duration-500" data-animate>
+      <h2 class="text-3xl font-bold mb-4">Segon títol</h2>
+      <p class="text-gray-600">Aquest també apareix al scroll.</p>
+    </div>
+
+    
+    <script>
+      // Configuració de l'Intersection Observer
+      const observerOptions = {
+        threshold: 0.1, // Dispara quan el 10% de l'element és visible
+        rootMargin: "0px 0px -50px 0px", // Dispara 50px abans que l'element sigui completament visible
+      };
+
+      // Crear l'observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Eliminar classes d'estat ocult
+            entry.target.classList.remove("opacity-0", "translate-y-4");
+            // Afegir classes d'estat visible
+            entry.target.classList.add("opacity-100", "translate-y-0");
+
+            // Opcional: desconnectar després de l'animació (millor rendiment)
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Aplicar l'observer a tots els elements amb data-animate
+      document.querySelectorAll("[data-animate]").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
+</html>
