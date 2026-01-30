@@ -87,7 +87,7 @@
     <main
       class="overflow-x-hidden w-full bg-bg3-gradient bg-no-repeat bg-cover pt-24"
     >
-      <section class="w-full text-center">
+      <section class="w-full text-center opacity-0 translate-y-4 transition-all duration-500" data-animate>
         <h1 class="font-sourceSerif text-4xl md:text-5xl lg:text-6xl mt-5">
           Careers at
         </h1>
@@ -95,7 +95,7 @@
           Aetherfield
         </h1>
       </section>
-      <section id="seccion1Cards" class="px-4 xl:px-80 mt-10">
+      <section id="seccion1Cards" class="px-4 xl:px-80 mt-10 opacity-0 translate-y-4 transition-all delay-150 duration-500" data-animate>
         <!-- Card: UX Designer -->
         <div class="rounded-2xl p-5 mb-4 bg-white">
           <h3 class="font-semibold text-lg mb-1">UX Designer</h3>
@@ -211,15 +211,36 @@
     </footer>
   </body>
   <script>
-    const menu = document.getElementById("menu-toggle");
-    const imgMenuClick = document.getElementById("imgMenuClick");
+      // Menú hamburguesa
+      const menu = document.getElementById("menu-toggle");
+      const imgMenuClick = document.getElementById("imgMenuClick");
 
-    menu.addEventListener("change", () => {
-      if (menu.checked) {
-        imgMenuClick.classList.add("rotate-45");
-      } else {
-        imgMenuClick.classList.remove("rotate-45");
-      }
-    });
-  </script>
+      menu.addEventListener("change", () => {
+        if (menu.checked) {
+          imgMenuClick.classList.add("rotate-45");
+        } else {
+          imgMenuClick.classList.remove("rotate-45");
+        }
+      });
+
+      // Intersection Observer para animaciones
+      const observerOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0", "translate-y-4");
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll("[data-animate]").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
 </html>

@@ -20,11 +20,11 @@
         <h1 class="font-radioCanada text-2xl font-extrabold">Aetherfield</h1>
         <!-- Botón hamburguesa -->
         <label for="menu-toggle" class="cursor-pointer z-50">
-          <div class=" ">
+          <div>
             <img
               src="img/index/menu/masMenu.svg"
               alt="menu"
-              class="w-6 h-6 transition-transform duration-500 hover:-opacity-50"
+              class="w-6 h-6 transition-transform duration-500 hover:opacity-50"
               id="imgMenuClick"
             />
           </div>
@@ -52,6 +52,7 @@
         </div>
       </div>
     </header>
+
     <!-- Menú móvil -->
     <nav
       class="fixed top-20 left-0 w-full max-h-0 z-40 bg-white px-4 overflow-hidden peer-checked:max-h-screen transition-all duration-500 md:hidden ease-in"
@@ -85,23 +86,29 @@
     </nav>
 
     <main>
-      <section id="intro">
+      <section id="intro" class="px-4">
         <img
           src="img/journal/intro/IntroSection.svg"
           alt="Introducción seccion articulos"
-          class="w-full"
+          class="w-full opacity-0 translate-y-4 transition-all duration-700 ease-out"
+          opacity-0 translate-y-4 transition-all duration-500" data-animate
         />
         <h1
-          class="font-radioCanada font-bold text-3xl md:text-4xl lg:text-5xl mt-8 w-full text-center"
+          class="font-radioCanada font-bold text-3xl md:text-4xl lg:text-5xl mt-8 w-full text-center opacity-0 translate-y-4 transition-all duration-700 ease-out"
+          opacity-0 translate-y-4 transition-all duration-500" data-animate
         >
           Latest articles
         </h1>
       </section>
+
       <section
         id="articulos"
         class="px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 xl:px-44"
       >
-        <article class="pb-10 p-4 hover:text-gray-600 transition-all duration-150">
+        <article
+          class="pb-10 p-4 hover:text-gray-600 transition-all duration-150 opacity-0 translate-y-4 transition-all duration-700 ease-out"
+          opacity-0 translate-y-4 transition-all duration-500" data-animate
+        >
           <img
             src="img/journal/articles/Image-1.svg"
             alt="Imagen 1 de las journal cards"
@@ -117,7 +124,10 @@
           </p>
         </article>
 
-        <article class="pb-10 p-4 hover:text-gray-600 transition duration-200 ease-in">
+        <article
+          class="pb-10 p-4 hover:text-gray-600 transition duration-200 ease-in opacity-0 translate-y-4 transition-all duration-700 ease-out"
+          opacity-0 translate-y-4 transition-all duration-500" data-animate
+        >
           <img
             src="img/journal/articles/Image-2.svg"
             alt="Imagen 2 de las journal cards"
@@ -133,7 +143,10 @@
           </p>
         </article>
 
-        <article class="pb-10 p-4 hover:text-gray-600 transition-all duration-150">
+        <article
+          class="pb-10 p-4 hover:text-gray-600 transition-all duration-150 opacity-0 translate-y-4 transition-all duration-700 ease-out"
+          opacity-0 translate-y-4 transition-all duration-500" data-animate
+        >
           <img
             src="img/journal/articles/Image-3.svg"
             alt="Imagen 3 de las journal cards"
@@ -149,7 +162,10 @@
           </p>
         </article>
 
-        <article class="pb-10 p-4 hover:text-gray-600 transition-all duration-150">
+        <article
+          class="pb-10 p-4 hover:text-gray-600 transition-all duration-150 opacity-0 translate-y-4 transition-all duration-700 ease-out"
+          opacity-0 translate-y-4 transition-all duration-500" data-animate
+        >
           <img
             src="img/journal/articles/Image-4.svg"
             alt="Imagen 4 de las journal cards"
@@ -165,7 +181,10 @@
           </p>
         </article>
 
-        <article class="pb-10 p-4 hover:text-gray-600 transition-all duration-150">
+        <article
+          class="pb-10 p-4 hover:text-gray-600 transition-all duration-150 opacity-0 translate-y-4 transition-all duration-700 ease-out"
+          opacity-0 translate-y-4 transition-all duration-500" data-animate
+        >
           <img
             src="img/journal/articles/Image-5.svg"
             alt="Imagen 5 de las journal cards"
@@ -181,7 +200,10 @@
           </p>
         </article>
 
-        <article class="pb-10 p-4 hover:text-gray-600 transition-all duration-150">
+        <article
+          class="pb-10 p-4 hover:text-gray-600 transition-all duration-150 opacity-0 translate-y-4 transition-all duration-700 ease-out"
+          opacity-0 translate-y-4 transition-all duration-500" data-animate
+        >
           <img
             src="img/journal/articles/Image-6.svg"
             alt="Imagen 6 de las journal cards"
@@ -213,7 +235,6 @@
     </section>
 
     <!-- Footer -->
-
     <footer class="bg-bg4 text-p3 w-full p-4">
       <div
         id="foot-nav"
@@ -253,17 +274,39 @@
         </h1>
       </div>
     </footer>
-  </body>
-  <script>
-    const menu = document.getElementById("menu-toggle");
-    const imgMenuClick = document.getElementById("imgMenuClick");
 
-    menu.addEventListener("change", () => {
-      if (menu.checked) {
-        imgMenuClick.classList.add("rotate-45");
-      } else {
-        imgMenuClick.classList.remove("rotate-45");
-      }
-    });
-  </script>
+    <script>
+      // Menú hamburguesa
+      const menu = document.getElementById("menu-toggle");
+      const imgMenuClick = document.getElementById("imgMenuClick");
+
+      menu.addEventListener("change", () => {
+        if (menu.checked) {
+          imgMenuClick.classList.add("rotate-45");
+        } else {
+          imgMenuClick.classList.remove("rotate-45");
+        }
+      });
+
+      // Intersection Observer para animaciones
+      const observerOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0", "translate-y-4");
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll("[dat a-animate]").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
 </html>

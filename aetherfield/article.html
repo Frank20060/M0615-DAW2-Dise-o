@@ -86,7 +86,7 @@
 
     <main class="xl:px-52">
       <section
-        class="my-8 text-center w-full px-6 justify-center flex flex-col"
+        class="my-8 text-center w-full px-6 justify-center flex flex-col opacity-0 translate-y-4 transition-all duration-500" data-animate
       >
         <p class="w-full font-geistMono text-p2 text-lg mt-2">
           Insights · 4 min
@@ -101,7 +101,7 @@
         <img
           src="img/article/articleImg/Image.svg"
           alt="Imagen articulo"
-          class="w-full mt-8"
+          class="w-full mt-8 opacity-0 translate-y-4 transition-all duration-500 delay-100" data-animate
         />
       </section>
       <section
@@ -109,7 +109,7 @@
         class="my-8 text-center w-full px-6 justify-center flex flex-col lg:flex-row"
       >
         <div
-          class="flex flex-row w-full justify-start gap-20 mt-6 text-start lg:flex-col lg:items-center lg:w-4/6"
+          class="flex flex-row w-full justify-start gap-20 mt-6 text-start lg:flex-col lg:items-center lg:w-4/6 opacity-0 translate-y-4 transition-all duration-500" data-animate
         >
           <div>
             <p class="font-sourceSerif font-semibold text-gray-400">
@@ -134,7 +134,7 @@
               the foundation.
             </p>
           </div>
-          <div class="text-justify">
+          <div class="text-justify opacity-0 translate-y-4 transition-all duration-500" data-animate>
             <p class="flex flex-col font-sourceSerif text-xl text-justify mt-6">
               <span
                 class="w-full font-radioCanada font-semibold text-lg text-start mb-4"
@@ -320,15 +320,36 @@
     </footer>
   </body>
   <script>
-    const menu = document.getElementById("menu-toggle");
-    const imgMenuClick = document.getElementById("imgMenuClick");
+      // Menú hamburguesa
+      const menu = document.getElementById("menu-toggle");
+      const imgMenuClick = document.getElementById("imgMenuClick");
 
-    menu.addEventListener("change", () => {
-      if (menu.checked) {
-        imgMenuClick.classList.add("rotate-45");
-      } else {
-        imgMenuClick.classList.remove("rotate-45");
-      }
-    });
-  </script>
+      menu.addEventListener("change", () => {
+        if (menu.checked) {
+          imgMenuClick.classList.add("rotate-45");
+        } else {
+          imgMenuClick.classList.remove("rotate-45");
+        }
+      });
+
+      // Intersection Observer para animaciones
+      const observerOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0", "translate-y-4");
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll("[data-animate]").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
 </html>
