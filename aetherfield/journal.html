@@ -105,7 +105,8 @@
         id="articulos"
         class="px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 xl:px-44"
       >
-        <article
+        <a href="article.html">
+          <article
           class="pb-10 p-4 hover:text-gray-600 transition-all duration-150 opacity-0 translate-y-4 transition-all duration-700 ease-out"
           opacity-0 translate-y-4 transition-all duration-500" data-animate
         >
@@ -123,6 +124,7 @@
             waste, and energy data into modern workflows.
           </p>
         </article>
+        </a>
 
         <article
           class="pb-10 p-4 hover:text-gray-600 transition duration-200 ease-in opacity-0 translate-y-4 transition-all duration-700 ease-out"
@@ -275,36 +277,30 @@
       </div>
     </footer>
 
-    <script>
-      // Menú hamburguesa
-      const menu = document.getElementById("menu-toggle");
-      const imgMenuClick = document.getElementById("imgMenuClick");
-
-      menu.addEventListener("change", () => {
-        if (menu.checked) {
-          imgMenuClick.classList.add("rotate-45");
-        } else {
-          imgMenuClick.classList.remove("rotate-45");
-        }
-      });
-
-      // Intersection Observer para animaciones
+   <script>
+      // Configuració de l'Intersection Observer
       const observerOptions = {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px",
+        threshold: 0.1, // Dispara quan el 10% de l'element és visible
+        rootMargin: "0px 0px -50px 0px", // Dispara 50px abans que l'element sigui completament visible
       };
 
+      // Crear l'observer
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            // Eliminar classes d'estat ocult
             entry.target.classList.remove("opacity-0", "translate-y-4");
+            // Afegir classes d'estat visible
             entry.target.classList.add("opacity-100", "translate-y-0");
+
+            // Opcional: desconnectar després de l'animació (millor rendiment)
             observer.unobserve(entry.target);
           }
         });
       }, observerOptions);
 
-      document.querySelectorAll("[dat a-animate]").forEach((el) => {
+      // Aplicar l'observer a tots els elements amb data-animate
+      document.querySelectorAll("[data-animate]").forEach((el) => {
         observer.observe(el);
       });
     </script>
