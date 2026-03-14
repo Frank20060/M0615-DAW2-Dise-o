@@ -1,0 +1,20 @@
+:root {
+  --bs-primary: #7036ba;
+  --bs-primary-rgb: 112, 54, 186;
+  --custom-cyan: #00cbb8; /* El color del botón Start Training */
+}
+#home {
+  padding-top: 72px; /* Espacio para que la navbar fixed no tape el h1 */
+}
+
+.btn-training {
+  background-color: var(--custom-cyan);
+  color: white;
+  transition: transform 0.2s;
+}
+
+.btn-training:hover {
+  background-color: #00b4a4;
+  color: white;
+  transform: scale(1.05);
+}
