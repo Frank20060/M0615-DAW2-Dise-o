@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-xl navbar-dark bg-primary fixed-top">
+    <nav
+      class="navbar navbar-expand-xl navbar-dark bg-primary bg-xl-transparent fixed-top shadow-none shadow-xl-none"
+    >
       <div class="container-fluid px-0">
         <div
           class="d-flex justify-content-between align-items-center w-100 px-3 py-2"
@@ -28,7 +30,7 @@
           </a>
 
           <button
-            class="navbar-toggler"
+            class="navbar-toggler border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -38,10 +40,10 @@
         </div>
 
         <div
-          class="collapse navbar-collapse shadow bg-primary w-100 mt-1"
+          class="collapse navbar-collapse w-100 mt-0 bg-primary bg-xl-transparent"
           id="navbarNav"
         >
-          <ul class="navbar-nav ms-auto text-center py-3">
+          <ul class="navbar-nav ms-auto text-center py-3 py-xl-0 px-xl-4">
             <li class="nav-item">
               <a class="nav-link py-2" href="#about" data-bs-dismiss="collapse"
                 >About Us</a
@@ -50,7 +52,7 @@
             <li class="nav-item">
               <a
                 class="nav-link py-2"
-                href="#how_to_start"
+                href="#how-to-start"
                 data-bs-dismiss="collapse"
                 >How To Start</a
               >
@@ -97,36 +99,54 @@
       </div>
     </nav>
 
-    <section id="home" class="position-relative">
-      <div class="bg-primary text-white text-center py-5 position-relative">
-        <div class="container py-2">
-          <h1 class="display-1 fw-medium mb-3 px-3">
-            Online Workout Personal Program
-          </h1>
-          <p class="fs-1 fw-light pt-4">
-            Start training online with your personal coach and become healthy
-          </p>
-        </div>
-
+    <section id="home" class="container-fluid p-0 overflow-hidden">
+      <div class="row g-0">
         <div
-          class="position-absolute top-100 start-50 translate-middle w-100"
-          style="z-index: 10"
+          class="col-12 col-xl-6 bg-primary text-white d-flex align-items-center justify-content-center py-5 position-relative"
+          style="
+            min-height: 45vh;
+            @media (min-width: 1200px) {
+              min-height: 85vh;
+            }
+          "
         >
-          <button
-            class="btn btn-training rounded-pill px-5 py-3 fw-bold fs-4 shadow-lg border-0"
-          >
-            Start Training
-          </button>
-        </div>
-      </div>
+          <div class="p-4 p-xl-5 text-center text-xl-start">
+            <h1 class="display-3 display-xl-1 fw-bold mb-4">
+              Online Workout Personal Program
+            </h1>
+            <p class="fs-4 fs-xl-1 fw-light mb-5">
+              Start training online with your personal coach and become healthy
+            </p>
 
-      <div class="hero-image-wrapper" style="z-index: 1">
-        <img
-          src="media/home/photo.png"
-          alt="Workout"
-          class="img-fluid w-100 h-50"
-          style="height: 60vh; object-fit: cover; filter: brightness(0.7)"
-        />
+            <div class="d-none d-xl-block">
+              <button
+                class="btn btn-training rounded-pill px-5 py-3 fw-bold fs-4 shadow-lg border-0"
+              >
+                Start Training
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="d-xl-none position-absolute start-50 translate-middle"
+            style="top: 100%; z-index: 10"
+          >
+            <button
+              class="btn btn-training rounded-pill px-5 py-3 fw-bold fs-2 shadow-lg border-0 text-nowrap"
+            >
+              Start Training
+            </button>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-6">
+          <img
+            src="media/home/photo.png"
+            alt="Workout"
+            class="w-100 h-100"
+            style="object-fit: cover; min-height: 50vh; filter: brightness(0.8)"
+          />
+        </div>
       </div>
     </section>
     <section id="about" class="container py-5 text-center">
@@ -149,48 +169,71 @@
       </div>
     </section>
 
-<section id="how-to-start" class="bg-primary text-white py-5">
-  <div class="container py-5 text-center">
-    <h2 class="display-4 fw-bold mb-3">How To Start</h2>
-    <p class="fs-5 fw-light mb-5 mx-auto" style="max-width: 700px; opacity: 0.9">
-      It’s easy to start training right now without going anywhere, just in
-      your room, without missing important things and coach advices.
-    </p>
+    <section id="how-to-start" class="bg-primary text-white py-5">
+      <div class="container py-5 text-center">
+        <h2 class="display-4 fw-bold mb-3">How To Start</h2>
+        <p
+          class="fs-5 fw-light mb-5 mx-auto"
+          style="max-width: 700px; opacity: 0.9"
+        >
+          It’s easy to start training right now without going anywhere, just in
+          your room, without missing important things and coach advices.
+        </p>
 
-    <div class="d-block d-lg-flex align-items-start justify-content-center text-start gap-lg-5">
-      
-      <div class="d-flex flex-row align-items-start gap-3 mb-5 mb-lg-0 mx-auto mx-lg-0" style="max-width: 450px; flex: 1;">
-        <div class="display-1 fw-bold opacity-100 lh-1">1</div>
-        <div class="position-relative">
-          <p class="fs-6 fw-light m-0 pt-lg-2">
-            Sign up in Fitness Online with your phone number. No spam guaranteed. You can skip at any moment.
-          </p>
-          <span class="d-none d-lg-block position-absolute" style="right: -40px; top: 10px; font-size: 1.5rem; opacity: 0.5">→</span>
+        <div
+          class="d-block d-lg-flex align-items-start justify-content-center text-start gap-lg-5"
+        >
+          <div
+            class="d-flex flex-row align-items-start gap-3 mb-5 mb-lg-0 mx-auto mx-lg-0"
+            style="max-width: 450px; flex: 1"
+          >
+            <div class="display-1 fw-bold opacity-100 lh-1">1</div>
+            <div class="position-relative">
+              <p class="fs-6 fw-light m-0 pt-lg-2">
+                Sign up in Fitness Online with your phone number. No spam
+                guaranteed. You can skip at any moment.
+              </p>
+              <span
+                class="d-none d-lg-block position-absolute"
+                style="right: -40px; top: 10px; font-size: 1.5rem; opacity: 0.5"
+                >→</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-row align-items-start gap-3 mb-5 mb-lg-0 mx-auto mx-lg-0"
+            style="max-width: 450px; flex: 1"
+          >
+            <div class="display-1 fw-bold opacity-100 lh-1">2</div>
+            <div class="position-relative">
+              <p class="fs-6 fw-light m-0 pt-lg-2">
+                We will immediately add you in our chat bot, where you will be
+                able to pay chosen plan.
+              </p>
+              <span
+                class="d-none d-lg-block position-absolute"
+                style="right: -40px; top: 10px; font-size: 1.5rem; opacity: 0.5"
+                >→</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-row align-items-start gap-3 mx-auto mx-lg-0"
+            style="max-width: 450px; flex: 1"
+          >
+            <div class="display-1 fw-bold opacity-100 lh-1">3</div>
+            <div class="position-relative">
+              <p class="fs-6 fw-light m-0 pt-lg-2">
+                In 24 hours your trainer will contact you to get acquainted and
+                make a training program.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="d-flex flex-row align-items-start gap-3 mb-5 mb-lg-0 mx-auto mx-lg-0" style="max-width: 450px; flex: 1;">
-        <div class="display-1 fw-bold opacity-100 lh-1">2</div>
-        <div class="position-relative">
-          <p class="fs-6 fw-light m-0 pt-lg-2">
-            We will immediately add you in our chat bot, where you will be able to pay chosen plan.
-          </p>
-          <span class="d-none d-lg-block position-absolute" style="right: -40px; top: 10px; font-size: 1.5rem; opacity: 0.5">→</span>
-        </div>
-      </div>
-
-      <div class="d-flex flex-row align-items-start gap-3 mx-auto mx-lg-0" style="max-width: 450px; flex: 1;">
-        <div class="display-1 fw-bold opacity-100 lh-1">3</div>
-        <div class="position-relative">
-          <p class="fs-6 fw-light m-0 pt-lg-2">
-            In 24 hours your trainer will contact you to get acquainted and make a training program.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
     <section id="features" class="container py-5">
       <h2 class="display-4 fw-bold text-center mb-5">Features</h2>
 
@@ -605,5 +648,14 @@
         }
       });
     });
+
+    window.onscroll = function () {
+      var nav = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    };
   </script>
 </html>
