@@ -12,37 +12,86 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
-      <div class="container-xl py-2">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img
-            src="media/icono.svg"
-            alt="Logo"
-            width="30"
-            height="24"
-            class="me-2"
-          />
-          Fitness Online
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+      <div class="container-fluid px-0">
+        <div
+          class="d-flex justify-content-between align-items-center w-100 px-3 py-2"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <a class="navbar-brand d-flex align-items-center" href="#home">
+            <img
+              src="media/icono.svg"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="me-2"
+            />
+            Fitness Online
+          </a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div
+          class="collapse navbar-collapse shadow bg-primary w-100 mt-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ms-auto text-center py-3">
             <li class="nav-item">
-              <a class="nav-link" href="#">How To Start</a>
+              <a class="nav-link py-2" href="#about" data-bs-dismiss="collapse"
+                >About Us</a
+              >
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+            <li class="nav-item">
+              <a
+                class="nav-link py-2"
+                href="#how_to_start"
+                data-bs-dismiss="collapse"
+                >How To Start</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link py-2"
+                href="#features"
+                data-bs-dismiss="collapse"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link py-2"
+                href="#pricing"
+                data-bs-dismiss="collapse"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link py-2"
+                href="#feedback"
+                data-bs-dismiss="collapse"
+                >Feedback</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2" href="#faq" data-bs-dismiss="collapse"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link py-2"
+                href="#contact"
+                data-bs-dismiss="collapse"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -50,8 +99,8 @@
 
     <section id="home" class="position-relative">
       <div class="bg-primary text-white text-center py-5 position-relative">
-        <div class="container py-5">
-          <h1 class="display-1 fw-medium mb-3 px-4">
+        <div class="container py-2">
+          <h1 class="display-1 fw-medium mb-3 px-3">
             Online Workout Personal Program
           </h1>
           <p class="fs-1 fw-light pt-4">
@@ -339,23 +388,27 @@
           />
         </div>
 
-        <div class="col-8 col-md-8 col-lg-6 text-start">
-          <p class="fs-5 text-secondary mb-5">
-            The most amazing fitness trainings! I’ve became true sportsman with
-            it! Trainer is really professional. The most amazing fitness
-            trainings! I’ve became true sportsman with it! Trainer is really
-            professional. The most amazing fitness trainings!
-          </p>
+        <div
+          class="col-10 col-sm-10 col-lg-8 text-start d-sm-flex flex-sm-row-reverse align-items-center align-items-sm-start"
+        >
+          <div class="ms-sm-4">
+            <p class="fs-5 text-secondary mb-4 mb-sm-0">
+              The most amazing fitness trainings! I’ve became true sportsman
+              with it! Trainer is really professional. The most amazing fitness
+              trainings! I’ve became true sportsman with it! Trainer is really
+              professional. The most amazing fitness trainings!
+            </p>
+          </div>
 
-          <div class="d-flex flex-column align-items-start">
+          <div class="d-flex flex-column align-items-start flex-shrink-0">
             <img
               src="media/feedback/profilephoto.png"
               alt="Sarah Kong"
               class="rounded-circle mb-3"
-              style="width: 100px"
+              style="width: 100px; height: 100px; object-fit: cover"
             />
             <h2 class="h4 fw-bold mb-1">Sarah Kong</h2>
-            <div class="d-flex align-items-start justify-content-start">
+            <div class="d-flex align-items-center">
               <img
                 src="media/feedback/insta_icon.svg"
                 alt="insta"
@@ -367,7 +420,7 @@
           </div>
         </div>
 
-        <div class="col-2 col-md-1">
+        <div class="col-2 col-sm-1">
           <img
             src="media/feedback/arrow.svg"
             alt="next"
@@ -567,17 +620,36 @@
       </div>
     </section>
     <footer class="bg-primary text-white py-5">
-  <div class="container ps-4">
-    <p class="mb-4 fs-5">
-      <a href="#" class="text-white text-decoration-none">Terms of Service</a>
-    </p>
-    
-    <p class="mb-0 fs-4">
-      &copy; Fitness Online, 2022
-    </p>
-  </div>
-</footer>
+      <div class="container ps-4">
+        <p class="mb-4 fs-5">
+          <a href="#" class="text-white text-decoration-none"
+            >Terms of Service</a
+          >
+        </p>
+
+        <p class="mb-0 fs-4">&copy; Fitness Online, 2022</p>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
+
+  <script>
+    // Tonteria para que cuando se cierre el nav cuando clickes el nav
+    const navLinks = document.querySelectorAll(".nav-link");
+    const menuToggle = document.getElementById("navbarNav");
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        // 768px es el breakpoint 'md' de Bootstrap
+        // Solo ejecutamos el cierre si la pantalla es menor a esa medida
+        if (window.innerWidth < 768) {
+          const bsCollapse =
+            bootstrap.Collapse.getInstance(menuToggle) ||
+            new bootstrap.Collapse(menuToggle);
+          bsCollapse.hide();
+        }
+      });
+    });
+  </script>
 </html>

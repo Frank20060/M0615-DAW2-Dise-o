@@ -3,6 +3,13 @@
   --bs-primary-rgb: 112, 54, 186;
   --custom-cyan: #00cbb8; /* El color del botón Start Training */
 }
+
+/* Esto hace que al navegar, la sección se detenga un poco antes de la parte superior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Ajusta este número según el alto de tu barra */
+}
+
 #home {
   padding-top: 72px; /* Espacio para que la navbar fixed no tape el h1 */
 }
