@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-primary fixed-top">
       <div class="container-fluid px-0">
         <div
           class="d-flex justify-content-between align-items-center w-100 px-3 py-2"
@@ -130,24 +130,20 @@
       </div>
     </section>
     <section id="about" class="container py-5 text-center">
-      <h1 class="display-3 fw-medium mb-5 px-3">About Us</h1>
-
+      <h2 class="display-4 fw-bold mb-5">About Us</h2>
       <div class="row g-4 justify-content-center">
         <div class="col-12 col-lg-6">
           <img
             src="media/about/simulacionVideo.jpg"
-            alt="About Us Video 1"
-            class="img-fluid w-100 object-fit-cover shadow-sm"
-            style="min-height: 300px; cursor: pointer"
+            alt="Video 1"
+            class="img-fluid w-100"
           />
         </div>
-
         <div class="col-12 col-lg-6">
           <img
             src="media/about/simulacionVideo.jpg"
-            alt="About Us Video 2"
-            class="img-fluid w-100 object-fit-cover shadow-sm"
-            style="min-height: 300px; cursor: pointer"
+            alt="Video 2"
+            class="img-fluid w-100"
           />
         </div>
       </div>
@@ -210,165 +206,138 @@
       </div>
     </section>
 
-    <section id="features" class="py-5 bg-light">
-      <div class="container py-5 text-center">
-        <h2 class="display-4 fw-bold mb-5">Features</h2>
+    <section id="features" class="container py-5">
+      <h2 class="display-4 fw-bold text-center mb-5">Features</h2>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-7 text-start">
-            <!-- Feature 1 -->
-            <div class="row align-items-start">
-              <div class="col-3 d-flex justify-content-center">
-                <img
-                  src="media/featues/listItems/item1.svg"
-                  class="img-fluid"
-                  style="max-width: 80px"
-                />
-              </div>
-
-              <div class="col-9">
-                <h4 class="fw-bold">Comfortable Place</h4>
-                <p class="text-muted mb-0">
-                  Train where it is convenient for you. You don’t need to go to
-                  gym anymore
-                </p>
-              </div>
+      <div class="row justify-content-center g-4">
+        <div class="col-12 col-lg-4">
+          <div
+            class="d-flex flex-row flex-lg-column align-items-start align-items-lg-center text-start text-lg-center"
+          >
+            <div class="flex-shrink-0 mb-lg-3 me-3 me-lg-0">
+              <img
+                src="media/featues/listItems/item1.svg"
+                class="img-fluid"
+                style="width: 60px; height: 60px"
+                alt="Icono 1"
+              />
             </div>
-
-            <!-- Feature 2 -->
-            <div class="row align-items-start">
-              <div class="col-3 d-flex justify-content-center">
-                <img
-                  src="media/featues/listItems/item2.svg"
-                  class="img-fluid"
-                  style="max-width: 80px"
-                />
-              </div>
-
-              <div class="col-9">
-                <h4 class="fw-bold">Professional Trainers</h4>
-                <p class="text-muted mb-0">
-                  Train where it is convenient for you. You don’t need to go to
-                  gym anymore
-                </p>
-              </div>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="row align-items-start">
-              <div class="col-3 d-flex justify-content-center">
-                <img
-                  src="media/featues/listItems/item3.svg"
-                  class="img-fluid"
-                  style="max-width: 80px"
-                />
-              </div>
-
-              <div class="col-9">
-                <h4 class="fw-bold">Individual Approach</h4>
-                <p class="text-muted mb-0">
-                  You will have a training program that fits exactly you
-                </p>
-              </div>
+            <div>
+              <h4 class="fw-bold">Comfortable Place</h4>
+              <p class="text-muted small mb-0">
+                Train where it is convenient for you. You don’t need to go to
+                gym anymore.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- Button -->
-        <div class="mt-5">
-          <button
-            class="btn btn-training rounded-pill px-5 py-3 fw-bold fs-4 shadow border-0"
+        <div class="col-12 col-lg-4">
+          <div
+            class="d-flex flex-row flex-lg-column align-items-start align-items-lg-center text-start text-lg-center"
           >
-            Start Training
-          </button>
+            <div class="flex-shrink-0 mb-lg-3 me-3 me-lg-0">
+              <img
+                src="media/featues/listItems/item2.svg"
+                class="img-fluid"
+                style="width: 60px; height: 60px"
+                alt="Icono 2"
+              />
+            </div>
+            <div>
+              <h4 class="fw-bold">Professional Trainers</h4>
+              <p class="text-muted small mb-0">
+                Train where it is convenient for you. You don’t need to go to
+                gym anymore.
+              </p>
+            </div>
+          </div>
         </div>
+
+        <div class="col-12 col-lg-4">
+          <div
+            class="d-flex flex-row flex-lg-column align-items-start align-items-lg-center text-start text-lg-center"
+          >
+            <div class="flex-shrink-0 mb-lg-3 me-3 me-lg-0">
+              <img
+                src="media/featues/listItems/item3.svg"
+                class="img-fluid"
+                style="width: 60px; height: 60px"
+                alt="Icono 3"
+              />
+            </div>
+            <div>
+              <h4 class="fw-bold">Individual Approach</h4>
+              <p class="text-muted small mb-0">
+                You will have a training program that fits exactly you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <button
+          class="btn btn-training rounded-pill px-5 py-3 fw-bold shadow-sm"
+        >
+          Start Training
+        </button>
       </div>
     </section>
 
-    <section id="pricing" class="bg-primary text-white pb-2">
-      <div class="container pt-5 pb-2 text-center">
-        <h2 class="display-3 fw-bold mb-5">Pricing</h2>
-
-        <div class="row justify-content-center mb-4">
-          <div class="col-lg-4 col-md-6">
+    <section id="pricing" class="bg-primary text-white py-5">
+      <div class="container py-5 text-center">
+        <h2 class="display-4 fw-bold mb-5">Pricing</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-11 col-md-8 col-lg-4">
             <div
-              class="p-3 rounded-1 text-start shadow"
+              class="p-4 rounded-3 text-start shadow-sm h-100"
               style="background: rgba(255, 255, 255, 0.15)"
             >
               <h3 class="fw-bold mb-4">Start</h3>
-
-              <ul class="mb-5">
+              <ul class="mb-5 opacity-75">
                 <li>Program for 8 workouts</li>
                 <li>3 calls with the trainer</li>
                 <li>Video instructions</li>
               </ul>
-
-              <p class="fs-4 mb-4">
-                <span class="display-6 fw-bold">$5</span>/month
-              </p>
-
-              <button
-                class="btn btn-outline-light rounded-pill border-2 px-4 py-2"
-              >
+              <p class="fs-2 mb-4"><b>$5</b>/month</p>
+              <button class="btn btn-outline-light rounded-pill w-100 py-2">
                 Choose
               </button>
             </div>
           </div>
-        </div>
-
-        <div class="row justify-content-center mb-4">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-11 col-md-8 col-lg-4">
             <div
-              class="p-3 rounded-1 text-start shadow"
+              class="p-4 rounded-3 text-start shadow-sm h-100"
               style="background: rgba(255, 255, 255, 0.15)"
             >
               <h3 class="fw-bold mb-4">Middle</h3>
-
-              <ul class="mb-5">
+              <ul class="mb-5 opacity-75">
                 <li>Program for 18 workouts</li>
                 <li>5 calls with the trainer</li>
                 <li>Video instructions</li>
                 <li>Text instructions</li>
-                <li>1 technique analysis</li>
               </ul>
-
-              <p class="fs-4 mb-4">
-                <span class="display-6 fw-bold">$14</span>/month
-              </p>
-
-              <button
-                class="btn btn-outline-light rounded-pill border-2 px-4 py-2"
-              >
+              <p class="fs-2 mb-4"><b>$14</b>/month</p>
+              <button class="btn btn-outline-light rounded-pill w-100 py-2">
                 Choose
               </button>
             </div>
           </div>
-        </div>
-
-        <div class="row justify-content-center mb-4">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-11 col-md-8 col-lg-4">
             <div
-              class="p-3 rounded-1 text-start shadow"
+              class="p-4 rounded-3 text-start shadow-sm h-100"
               style="background: rgba(255, 255, 255, 0.15)"
             >
-              <h3 class="fw-bold mb-4">Start</h3>
-
-              <ul class="mb-5">
+              <h3 class="fw-bold mb-4">Pro</h3>
+              <ul class="mb-5 opacity-75">
                 <li>Program for 40 workouts</li>
                 <li>15 calls with the trainer</li>
                 <li>Video instructions</li>
                 <li>Text instructions</li>
-                <li>5 technique analysis</li>
-                <li>Acces to chat with other sportsmen</li>
               </ul>
-
-              <p class="fs-4 mb-4">
-                <span class="display-6 fw-bold">$20</span>/month
-              </p>
-
-              <button
-                class="btn btn-outline-light rounded-pill border-2 px-4 py-2"
-              >
+              <p class="fs-2 mb-4"><b>$20</b>/month</p>
+              <button class="btn btn-outline-light rounded-pill w-100 py-2">
                 Choose
               </button>
             </div>

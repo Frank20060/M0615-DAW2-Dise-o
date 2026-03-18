@@ -1,12 +1,16 @@
 :root {
   --bs-primary: #7036ba;
+
   --bs-primary-rgb: 112, 54, 186;
+
   --custom-cyan: #00cbb8; /* El color del botón Start Training */
 }
 
 /* Esto hace que al navegar, la sección se detenga un poco antes de la parte superior */
+
 html {
   scroll-behavior: smooth;
+
   scroll-padding-top: 80px; /* Ajusta este número según el alto de tu barra */
 }
 
@@ -16,12 +20,32 @@ html {
 
 .btn-training {
   background-color: var(--custom-cyan);
+
   color: white;
+
   transition: transform 0.2s;
 }
 
 .btn-training:hover {
   background-color: #00b4a4;
+
   color: white;
+
   transform: scale(1.05);
 }
+
+/* Quitamos fondos y sombras del contenedor de los enlaces */
+
+.navbar-collapse {
+  background-color: transparent !important;
+
+  box-shadow: none !important;
+}
+
+/* Si los items tienen algún fondo individual, lo limpiamos */
+
+.nav-item {
+  background: none !important;
+}
+
+/* Ajuste para que los links se vean alineados correctamente en escritorio */
