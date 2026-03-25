@@ -449,18 +449,15 @@
   </body>
 
   <script>
-    // Tonteria para que cuando se cierre el nav cuando clickes el nav
+    // Auto-close navbar on click (mobile only)
     const navLinks = document.querySelectorAll(".nav-link");
     const menuToggle = document.getElementById("navbarNav");
 
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
-        // 768px es el breakpoint 'md' de Bootstrap
-        // Solo ejecutamos el cierre si la pantalla es menor a esa medida
-        if (window.innerWidth < 768) {
-          const bsCollapse =
-            bootstrap.Collapse.getInstance(menuToggle) ||
-            new bootstrap.Collapse(menuToggle);
+        // If the menu is currently shown (expanded in mobile view)
+        if (menuToggle.classList.contains("show")) {
+          const bsCollapse = bootstrap.Collapse.getInstance(menuToggle) || new bootstrap.Collapse(menuToggle);
           bsCollapse.hide();
         }
       });
