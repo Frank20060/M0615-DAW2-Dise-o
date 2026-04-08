@@ -14,6 +14,7 @@ html {
 
 body {
   font-family:
+    "Raleway",
     "Inter",
     -apple-system,
     BlinkMacSystemFont,
@@ -52,10 +53,11 @@ section {
 }
 
 .nav-link {
-  font-weight: 500;
+  font-weight: 200;
   margin: 0 10px;
-  opacity: 0.9;
+  opacity: 1;
   transition: opacity 0.2s;
+  color: white;
 }
 
 .nav-link:hover {
@@ -72,12 +74,12 @@ section {
 /* --- HERO --- */
 #home {
   padding: 0;
-  min-height: 100vh;
+  min-height: 80vh;
   overflow: hidden;
 }
 
 .hero-row {
-  min-height: 100vh;
+  min-height: 80vh;
   margin: 0;
 }
 
@@ -88,11 +90,32 @@ section {
   justify-content: center;
 }
 
-@media (min-width: 576px) { .hero-text-col { padding-left: calc((100vw - 540px) / 2); } }
-@media (min-width: 768px) { .hero-text-col { padding-left: calc((100vw - 720px) / 2); } }
-@media (min-width: 992px) { .hero-text-col { padding-left: calc((100vw - 960px) / 2); } }
-@media (min-width: 1200px) { .hero-text-col { padding-left: calc((100vw - 1140px) / 2); padding-right: 5rem; } }
-@media (min-width: 1400px) { .hero-text-col { padding-left: calc((100vw - 1320px) / 2); } }
+@media (min-width: 576px) {
+  .hero-text-col {
+    padding-left: calc((100vw - 540px) / 2);
+  }
+}
+@media (min-width: 768px) {
+  .hero-text-col {
+    padding-left: calc((100vw - 720px) / 2);
+  }
+}
+@media (min-width: 992px) {
+  .hero-text-col {
+    padding-left: calc((100vw - 960px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .hero-text-col {
+    padding-left: calc((100vw - 1140px) / 2);
+    padding-right: 5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-text-col {
+    padding-left: calc((100vw - 1320px) / 2);
+  }
+}
 
 @media (max-width: 1199.98px) {
   .hero-text-col {
@@ -124,7 +147,7 @@ section {
   border-color: var(--custom-teal) !important;
   color: white !important;
   border-radius: 50px;
-  padding: 12px 35px;
+  padding: 16px 40px;
   font-weight: 700;
   text-transform: capitalize;
   transition: all 0.3s ease;
@@ -161,49 +184,52 @@ section {
 .accordion-custom .accordion-item {
   background: transparent;
   border: none;
-  margin-bottom: 15px;
+  
 }
 
 .accordion-custom .accordion-button {
-  background: transparent;
-  color: white;
-  font-weight: 600;
-  padding: 20px 0;
-  box-shadow: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent !important;
+  color: white !important;
+  font-weight: 700;
+  padding: 25px 0;
+  box-shadow: none !important;
+  border: none;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.accordion-custom .accordion-button:not(.collapsed) {
-  color: var(--custom-teal);
-  border-bottom: none;
+/* Punto verde personalizado */
+.faq-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--custom-teal);
+  border-radius: 50%;
+  margin-right: 15px;
+  flex-shrink: 0;
 }
 
 .accordion-custom .accordion-button::after {
-  filter: brightness(0) invert(1);
+  content: "";
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+  filter: none;
+}
+
+.accordion-custom .accordion-button:not(.collapsed)::after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>');
+  transform: none;
 }
 
 .accordion-custom .accordion-body {
   color: rgba(255, 255, 255, 0.8);
-  padding: 0 20px 20px 0;
-}
-
-/* --- HOW TO START CONNECTORS --- */
-@media (min-width: 992px) {
-  .step-arrow {
-    position: relative;
-  }
-  .step-arrow::after {
-    content: "→";
-    position: absolute;
-    right: -30px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    opacity: 0.3;
-  }
-  .step-item:last-child .step-arrow::after {
-    display: none;
-  }
+  padding: 0 0 25px 23px; /* Alineado con el inicio del texto */
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* --- FEEDBACK CAROUSEL & GRID --- */
@@ -226,7 +252,8 @@ section {
 
 .feedback-arrow img {
   width: 25px;
-  filter: brightness(0) saturate(100%) invert(26%) sepia(85%) hydrate(1730%) hue-rotate(256deg) brightness(88%) contrast(92%); /* Primary Purple */
+  filter: brightness(0) saturate(100%) invert(26%) sepia(85%) hydrate(1730%)
+    hue-rotate(256deg) brightness(88%) contrast(92%); /* Primary Purple */
   transition: filter 0.3s ease;
 }
 

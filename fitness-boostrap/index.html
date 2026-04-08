@@ -8,10 +8,16 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-dark position-absolute w-100" style="top: 0; z-index: 1000;">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#home">
           <img
@@ -21,7 +27,8 @@
             height="35"
             class="me-2"
           />
-          Fitness Online
+          <span class="fw-light me-1">fitness</span
+          ><span class="fw-bold">online</span>
         </a>
 
         <button
@@ -56,9 +63,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#faq">FAQ</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-training ms-xl-4 mt-3 mt-xl-0 d-inline-block d-xl-none" href="#contact">Start Training</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -66,7 +70,9 @@
 
     <section id="home" class="container-fluid p-0">
       <div class="row g-0 hero-row">
-        <div class="col-12 col-xl-6 bg-primary text-white hero-text-col position-relative">
+        <div
+          class="col-12 col-xl-6 bg-primary text-white hero-text-col position-relative"
+        >
           <div>
             <h1 class="display-3 fw-bold mb-4">
               Online Workout Personal Program
@@ -81,13 +87,20 @@
           </div>
 
           <!-- Mobile CTA -->
-          <div class="d-xl-none position-absolute start-50 translate-middle" style="top: 100%; z-index: 10">
-            <a href="#contact" class="btn btn-training shadow-lg text-nowrap py-3 px-5 fs-4">Start Training</a>
+          <div
+            class="d-xl-none position-absolute start-50 translate-middle"
+            style="top: 100%; z-index: 10"
+          >
+            <a
+              href="#contact"
+              class="btn btn-training shadow-lg text-nowrap py-3 px-5 fs-4"
+              >Start Training</a
+            >
           </div>
         </div>
 
         <div class="col-12 col-xl-6">
-          <img src="media/home/photo.png" alt="Workout" class="hero-img">
+          <img src="media/home/photo.png" alt="Workout" class="hero-img" />
         </div>
       </div>
     </section>
@@ -97,92 +110,184 @@
         <div class="row g-4 justify-content-center">
           <div class="col-12 col-md-6">
             <div class="card card-custom overflow-hidden shadow">
-              <img src="media/about/simulacionVideo.jpg" alt="Video 1" class="img-fluid w-100">
+              <img
+                src="media/about/simulacionVideo.jpg"
+                alt="Video 1"
+                class="img-fluid w-100"
+              />
             </div>
           </div>
           <div class="col-12 col-md-6">
             <div class="card card-custom overflow-hidden shadow">
-              <img src="media/about/simulacionVideo.jpg" alt="Video 2" class="img-fluid w-100">
+              <img
+                src="media/about/simulacionVideo.jpg"
+                alt="Video 2"
+                class="img-fluid w-100"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-
-    <section id="how-to-start" class="bg-primary text-white">
+    <section id="how-to-start" class="bg-primary text-white py-11">
       <div class="container text-center">
         <h2 class="display-4 fw-bold mb-3">How To Start</h2>
-        <p class="fs-5 fw-light mb-5 mx-auto opacity-75" style="max-width: 700px;">
-          It’s easy to start training right now without going anywhere, just in your room, without missing important things and coach advices.
+        <p class="fs-4 fw-light mb-5 mx-auto opacity-75">
+          It’s easy to start training right now without going anywhere, just in
+          your room, without missing important things and coach advices.
         </p>
 
-        <div class="row g-4 text-start justify-content-center mt-5">
-          <div class="col-12 col-lg-4 step-item">
-            <div class="d-flex align-items-start gap-3 step-arrow">
-              <div class="display-1 fw-bold lh-1">1</div>
-              <p class="fs-6 fw-light mt-2">
-                Sign up in Fitness Online with your phone number. No spam guaranteed. You can skip at any moment.
+        <div class="row g-4 gx-lg-5 text-start justify-content-center mt-5">
+          <div class="col-12 col-lg-4 position-relative step-item">
+            <div class="d-flex align-items-center gap-3 pe-lg-4">
+              <div class="display-1 fw-bold lh-1" style="font-size: 5rem">
+                1
+              </div>
+              <p class="fs-6 fw-light mb-0 opacity-75">
+                Sign up in Fitness Online with your phone number. No spam
+                guaranteed. You can skip at any moment.
               </p>
+            </div>
+            <!-- Flecha Estilizada (Dotted) -->
+            <div
+              class="position-absolute top-50 start-100 translate-middle d-none d-lg-block pe-none"
+              style="z-index: 10; margin-left: -10px"
+            >
+              <svg
+                width="60"
+                height="20"
+                viewBox="0 0 100 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M70 10L85 20L70 30"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 20H75"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-dasharray="1 6"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 position-relative step-item">
+            <div class="d-flex align-items-center gap-3 pe-lg-4">
+              <div class="display-1 fw-bold lh-1" style="font-size: 5rem">
+                2
+              </div>
+              <p class="fs-6 fw-light mb-0 opacity-75">
+                We will immediately add you in our chat bot, where you will be
+                able to pay chosen plan.
+              </p>
+            </div>
+            <!-- Flecha Estilizada (Dotted) -->
+            <div
+              class="position-absolute top-50 start-100 translate-middle d-none d-lg-block pe-none"
+              style="z-index: 10; margin-left: -10px"
+            >
+              <svg
+                width="60"
+                height="20"
+                viewBox="0 0 100 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M70 10L85 20L70 30"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 20H75"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-dasharray="1 6"
+                />
+              </svg>
             </div>
           </div>
 
           <div class="col-12 col-lg-4 step-item">
-            <div class="d-flex align-items-start gap-3 step-arrow">
-              <div class="display-1 fw-bold lh-1">2</div>
-              <p class="fs-6 fw-light mt-2">
-                We will immediately add you in our chat bot, where you will be able to pay chosen plan.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-4 step-item">
-            <div class="d-flex align-items-start gap-3">
-              <div class="display-1 fw-bold lh-1">3</div>
-              <p class="fs-6 fw-light mt-2">
-                In 24 hours your trainer will contact you to get acquainted and make a training program.
+            <div class="d-flex align-items-center gap-3">
+              <div class="display-1 fw-bold lh-1" style="font-size: 5rem">
+                3
+              </div>
+              <p class="fs-6 fw-light mb-0 opacity-75">
+                In 24 hours your trainer will contact you to get acquainted and
+                make a training program.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </section>    <section id="features" class="bg-light-section">
+    </section>
+    <section id="features" class="bg-light-section">
       <div class="container text-center">
         <h2 class="display-4 fw-bold mb-5">Features</h2>
 
         <div class="row g-4 justify-content-center">
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card card-custom h-100 p-4 shadow-sm border-0">
+            <div class="card card-custom h-100 p-4">
               <div class="mb-3">
-                <img src="media/featues/listItems/item1.svg" alt="Comfortable Place Icon" width="60" height="60">
+                <img
+                  src="media/featues/listItems/item1.svg"
+                  alt="Comfortable Place Icon"
+                  width="60"
+                  height="60"
+                />
               </div>
               <h4 class="fw-bold">Comfortable Place</h4>
               <p class="text-muted small">
-                Train where it is convenient for you. You don’t need to go to gym anymore.
+                Train where it is convenient for you. You don’t need to go to
+                gym anymore.
               </p>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card card-custom h-100 p-4 shadow-sm border-0">
+            <div class="card card-custom h-100 p-4">
               <div class="mb-3">
-                <img src="media/featues/listItems/item2.svg" alt="Professional Trainers Icon" width="60" height="60">
+                <img
+                  src="media/featues/listItems/item3.svg"
+                  alt="Professional Trainers Icon"
+                  width="60"
+                  height="60"
+                />
               </div>
               <h4 class="fw-bold">Professional Trainers</h4>
               <p class="text-muted small">
-                Our trainers are professionals with years of experience in fitness and sports.
+                Our trainers are professionals with years of experience in
+                fitness and sports.
               </p>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card card-custom h-100 p-4 shadow-sm border-0">
+            <div class="card card-custom h-100 p-4">
               <div class="mb-3">
-                <img src="media/featues/listItems/item3.svg" alt="Individual Approach Icon" width="60" height="60">
+                <img
+                  src="media/featues/listItems/item2.svg"
+                  alt="Individual Approach Icon"
+                  width="60"
+                  height="60"
+                />
               </div>
               <h4 class="fw-bold">Individual Approach</h4>
               <p class="text-muted small">
-                You will have a training program that fits exactly you and your goals.
+                You will have a training program that fits exactly you and your
+                goals.
               </p>
             </div>
           </div>
@@ -194,54 +299,74 @@
       </div>
     </section>
 
-    <section id="pricing" class="bg-primary text-white">
-      <div class="container text-center">
-        <h2 class="display-4 fw-bold mb-5">Pricing</h2>
-        <div class="row g-4 justify-content-center">
-
-          <div class="col-12 col-lg-4">
-            <div class="pricing-card card-custom h-100 p-5 text-start">
-              <h3 class="fw-bold mb-4">Start</h3>
-              <ul class="list-unstyled mb-5 opacity-75">
-                <li class="mb-2">Program for 8 workouts</li>
-                <li class="mb-2">3 calls with the trainer</li>
-                <li>Video instructions</li>
+    <section id="pricing" class="bg-primary text-white py-11">
+      <div class="container">
+        <h2 class="display-4 fw-bold mb-5 text-center">Pricing</h2>
+        <div class="row g-4 justify-content-center px-lg-5">
+          <!-- Start Card -->
+          <div class="col-12 col-md-4">
+            <div class="h-100 p-4 d-flex flex-column" style="background-color: #9765d7; border-radius: 8px;">
+              <h2 class="fw-bold mb-4" style="font-size: 2.5rem;">Start</h2>
+              <ul class="mb-5 ps-3" style="font-size: 0.9rem; line-height: 1.6; opacity: 0.9;">
+                <li class="mb-1">Program for 8 workouts</li>
+                <li class="mb-1">3 calls with the trainer</li>
+                <li class="mb-1">Video instructions</li>
               </ul>
               <div class="mt-auto">
-                <p class="display-5 mb-4"><b>$5</b><span class="fs-6 fw-light">/month</span></p>
-                <button class="btn btn-outline-light rounded-pill w-100 py-3 fw-bold">Choose</button>
+                <div class="d-flex align-items-baseline mb-4">
+                  <span class="fw-bold" style="font-size: 2.8rem;">$5</span>
+                  <span class="opacity-75 ms-1" style="font-size: 1rem;">/month</span>
+                </div>
+                <button class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold" style="border-width: 2px; width: fit-content; min-width: 140px;">
+                  Choose
+                </button>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-lg-4">
-            <div class="pricing-card card-custom h-100 p-5 text-start">
-              <h3 class="fw-bold mb-4">Middle</h3>
-              <ul class="list-unstyled mb-5 opacity-75">
-                <li class="mb-2">Program for 18 workouts</li>
-                <li class="mb-2">5 calls with the trainer</li>
-                <li class="mb-2">Video instructions</li>
-                <li>Text instructions</li>
+          <!-- Middle Card -->
+          <div class="col-12 col-md-4">
+            <div class="h-100 p-4 d-flex flex-column" style="background-color: #9765d7; border-radius: 8px;">
+              <h2 class="fw-bold mb-4" style="font-size: 2.5rem;">Middle</h2>
+              <ul class="mb-5 ps-3" style="font-size: 0.9rem; line-height: 1.6; opacity: 0.9;">
+                <li class="mb-1">Program for 18 workouts</li>
+                <li class="mb-1">5 calls with the trainer</li>
+                <li class="mb-1">Video instructions</li>
+                <li class="mb-1">Text instructions</li>
+                <li class="mb-1">1 technique analysis</li>
               </ul>
               <div class="mt-auto">
-                <p class="display-5 mb-4"><b>$14</b><span class="fs-6 fw-light">/month</span></p>
-                <button class="btn btn-outline-light rounded-pill w-100 py-3 fw-bold">Choose</button>
+                <div class="d-flex align-items-baseline mb-4">
+                  <span class="fw-bold" style="font-size: 2.8rem;">$14</span>
+                  <span class="opacity-75 ms-1" style="font-size: 1rem;">/month</span>
+                </div>
+                <button class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold" style="border-width: 2px; width: fit-content; min-width: 140px;">
+                  Choose
+                </button>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-lg-4 ">
-            <div class="pricing-card card-custom h-100 p-5 text-start">
-              <h3 class="fw-bold mb-4">Pro</h3>
-              <ul class="list-unstyled mb-5 opacity-75">
-                <li class="mb-2">Program for 40 workouts</li>
-                <li class="mb-2">15 calls with the trainer</li>
-                <li class="mb-2">Video instructions</li>
-                <li>Text instructions</li>
+          <!-- Pro Card -->
+          <div class="col-12 col-md-4">
+            <div class="h-100 p-4 d-flex flex-column" style="background-color: #9765d7; border-radius: 8px;">
+              <h2 class="fw-bold mb-4" style="font-size: 2.5rem;">Pro</h2>
+              <ul class="mb-5 ps-3" style="font-size: 0.9rem; line-height: 1.6; opacity: 0.9;">
+                <li class="mb-1">Program for 40 workouts</li>
+                <li class="mb-1">15 calls with the trainer</li>
+                <li class="mb-1">Video instructions</li>
+                <li class="mb-1">Text instructions</li>
+                <li class="mb-1">5 technique analysis</li>
+                <li class="mb-1">Acces to chat with other sportsmen</li>
               </ul>
               <div class="mt-auto">
-                <p class="display-5 mb-4"><b>$20</b><span class="fs-6 fw-light">/month</span></p>
-                <button class="btn btn-outline-light rounded-pill w-100 py-3 fw-bold">Choose</button>
+                <div class="d-flex align-items-baseline mb-4">
+                  <span class="fw-bold" style="font-size: 2.8rem;">$20</span>
+                  <span class="opacity-75 ms-1" style="font-size: 1rem;">/month</span>
+                </div>
+                <button class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold" style="border-width: 2px; width: fit-content; min-width: 140px;">
+                  Choose
+                </button>
               </div>
             </div>
           </div>
@@ -258,16 +383,31 @@
           <div class="col-lg-6 px-4">
             <div class="row align-items-center g-4 text-start">
               <div class="col-12 col-md-4 text-center">
-                <img src="media/feedback/profilephoto.png" alt="Sarah Kong" class="rounded-circle mb-3 shadow" style="width: 120px; height: 120px; object-fit: cover;">
+                <img
+                  src="media/feedback/profilephoto.png"
+                  alt="Sarah Kong"
+                  class="rounded-circle mb-3 shadow"
+                  style="width: 120px; height: 120px; object-fit: cover"
+                />
                 <h4 class="fw-bold mb-1">Sarah Kong</h4>
                 <div class="d-flex align-items-center justify-content-center">
-                  <img src="media/feedback/insta_icon.svg" alt="Instagram" class="me-2" style="width: 18px;">
-                  <span style="color: #bc2a8d" class="small fw-bold">sarahkong</span>
+                  <img
+                    src="media/feedback/insta_icon.svg"
+                    alt="Instagram"
+                    class="me-2"
+                    style="width: 18px"
+                  />
+                  <span style="color: #bc2a8d" class="small fw-bold"
+                    >sarahkong</span
+                  >
                 </div>
               </div>
               <div class="col-12 col-md-8">
                 <p class="fs-5 text-secondary">
-                  The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional. The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional.The most amazing fitness trainings!
+                  The most amazing fitness trainings! I’ve became true sportsman
+                  with it! Trainer is really professional. The most amazing
+                  fitness trainings! I’ve became true sportsman with it! Trainer
+                  is really professional.The most amazing fitness trainings!
                 </p>
               </div>
             </div>
@@ -275,16 +415,33 @@
           <div class="col-lg-6 px-4">
             <div class="row align-items-center g-4 text-start">
               <div class="col-12 col-md-4 text-center">
-                <img src="media/feedback/profilephoto2.png" alt="Russel Williams" class="rounded-circle mb-3 shadow mx-auto" style="width: 100px; height: 100px; object-fit: cover;">
-                  <h4 class="fw-bold mb-1">Russel Williams</h4>
-                  <div class="d-flex align-items-center justify-content-center mb-3">
-                    <img src="media/feedback/insta_icon.svg" alt="Instagram" class="me-2" style="width: 18px;">
-                    <span style="color: #bc2a8d" class="small fw-bold">russelwilliams</span>
-                  </div>
+                <img
+                  src="media/feedback/profilephoto2.png"
+                  alt="Russel Williams"
+                  class="rounded-circle mb-3 shadow mx-auto"
+                  style="width: 100px; height: 100px; object-fit: cover"
+                />
+                <h4 class="fw-bold mb-1">Russel Williams</h4>
+                <div
+                  class="d-flex align-items-center justify-content-center mb-3"
+                >
+                  <img
+                    src="media/feedback/insta_icon.svg"
+                    alt="Instagram"
+                    class="me-2"
+                    style="width: 18px"
+                  />
+                  <span style="color: #bc2a8d" class="small fw-bold"
+                    >russelwilliams</span
+                  >
+                </div>
               </div>
               <div class="col-12 col-md-8">
                 <p class="fs-5 text-secondary">
-                  The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional. The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional.The most amazing fitness trainings!
+                  The most amazing fitness trainings! I’ve became true sportsman
+                  with it! Trainer is really professional. The most amazing
+                  fitness trainings! I’ve became true sportsman with it! Trainer
+                  is really professional.The most amazing fitness trainings!
                 </p>
               </div>
             </div>
@@ -292,45 +449,100 @@
         </div>
 
         <!-- Mobile View (MD and below) -->
-        <div id="feedbackCarousel" class="carousel slide d-lg-none mx-auto" style="max-width: 600px;" data-bs-ride="carousel">
+        <div
+          id="feedbackCarousel"
+          class="carousel slide d-lg-none mx-auto"
+          style="max-width: 600px"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row align-items-center g-4 text-start p-4">
-                <div class="col-12 text-center">
+                <div class="col-12 text-start">
                   <p class="fs-5 text-secondary">
-                    The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional. The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional.The most amazing fitness trainings!
+                    The most amazing fitness trainings! I’ve became true
+                    sportsman with it! Trainer is really professional. The most
+                    amazing fitness trainings! I’ve became true sportsman with
+                    it! Trainer is really professional.The most amazing fitness
+                    trainings!
                   </p>
-                  <img src="media/feedback/profilephoto.png" alt="Sarah Kong" class="rounded-circle mb-3 shadow mx-auto" style="width: 100px; height: 100px; object-fit: cover;">
+                  <img
+                    src="media/feedback/profilephoto.png"
+                    alt="Sarah Kong"
+                    class="rounded-circle mb-3 shadow"
+                    style="width: 100px; height: 100px; object-fit: cover"
+                  />
                   <h4 class="fw-bold mb-1">Sarah Kong</h4>
-                  <div class="d-flex align-items-center justify-content-center mb-3">
-                    <img src="media/feedback/insta_icon.svg" alt="Instagram" class="me-2" style="width: 18px;">
-                    <span style="color: #bc2a8d" class="small fw-bold">sarahkong</span>
+                  <div
+                    class="d-flex align-items-center mb-3"
+                  >
+                    <img
+                      src="media/feedback/insta_icon.svg"
+                      alt="Instagram"
+                      class="me-2"
+                      style="width: 18px"
+                    />
+                    <span style="color: #bc2a8d" class="small fw-bold"
+                      >sarahkong</span
+                    >
                   </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="row align-items-center g-4 text-start p-4">
-                <div class="col-12 text-center">
+                <div class="col-12 text-start">
                   <p class="fs-5 text-secondary">
-                    The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional. The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional.The most amazing fitness trainings!
+                    The most amazing fitness trainings! I’ve became true
+                    sportsman with it! Trainer is really professional. The most
+                    amazing fitness trainings! I’ve became true sportsman with
+                    it! Trainer is really professional.The most amazing fitness
+                    trainings!
                   </p>
-                  <img src="media/feedback/profilephoto2.png" alt="Russel Williams" class="rounded-circle mb-3 shadow mx-auto" style="width: 100px; height: 100px; object-fit: cover;">
+                  <img
+                    src="media/feedback/profilephoto2.png"
+                    alt="Russel Williams"
+                    class="rounded-circle mb-3 shadow"
+                    style="width: 100px; height: 100px; object-fit: cover"
+                  />
                   <h4 class="fw-bold mb-1">Russel Williams</h4>
-                  <div class="d-flex align-items-center justify-content-center mb-3">
-                    <img src="media/feedback/insta_icon.svg" alt="Instagram" class="me-2" style="width: 18px;">
-                    <span style="color: #bc2a8d" class="small fw-bold">russelwilliams</span>
+                  <div
+                    class="d-flex align-items-center mb-3"
+                  >
+                    <img
+                      src="media/feedback/insta_icon.svg"
+                      alt="Instagram"
+                      class="me-2"
+                      style="width: 18px"
+                    />
+                    <span style="color: #bc2a8d" class="small fw-bold"
+                      >russelwilliams</span
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Custom Navigation Arrows -->
-          <button class="carousel-control-prev feedback-arrow position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev">
-            <img src="media/feedback/arrow.svg" alt="prev" style="rotate: 180deg;">
+          <button
+            class="carousel-control-prev feedback-arrow position-absolute top-50 start-0 translate-middle-y"
+            type="button"
+            data-bs-target="#feedbackCarousel"
+            data-bs-slide="prev"
+          >
+            <img
+              src="media/feedback/arrow.svg"
+              alt="prev"
+              style="rotate: 180deg"
+            />
           </button>
-          <button class="carousel-control-next feedback-arrow position-absolute top-50 end-0 translate-middle-y" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next">
-            <img src="media/feedback/arrow.svg" alt="next">
+          <button
+            class="carousel-control-next feedback-arrow position-absolute top-50 end-0 translate-middle-y"
+            type="button"
+            data-bs-target="#feedbackCarousel"
+            data-bs-slide="next"
+          >
+            <img src="media/feedback/arrow.svg" alt="next" />
           </button>
         </div>
       </div>
@@ -340,55 +552,104 @@
       <div class="container">
         <h2 class="display-4 fw-bold text-center mb-5">FAQ</h2>
 
-        <div class="accordion accordion-custom mx-auto" id="accordionFAQ" style="max-width: 800px;">
+        <div
+          class="accordion accordion-custom mx-auto"
+          id="accordionFAQ"
+          style="max-width: 800px"
+        >
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
-                How can I start?
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+              >
+                <span class="faq-dot"></span>How can I start?
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionFAQ"
+            >
               <div class="accordion-body">
-                Sign up in Fitness Online with your phone number. No spam guaranteed. You can skip using Fitness Online at any moment. We will immediately add you in our chat bot.
+                Sign up in Fitness Online with your phone number. No spam
+                guaranteed. You can skip using Fitness Online at any moment. We
+                will immediately add you in our chat bot. In 24 hours after payment your trainer will contact you to get acquainted and to make training program best for you
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                How much does it cost?
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                <span class="faq-dot"></span>How much does it cost?
               </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFAQ"
+            >
               <div class="accordion-body">
-                We offer three main plans: Start ($5), Middle ($14), and Pro ($20). You can choose the one that fits your fitness goals best.
+                Sign up in Fitness Online with your phone number. No spam
+                guaranteed. You can skip using Fitness Online at any moment. We
+                will immediately add you in our chat bot. In 24 hours after payment your trainer will contact you to get acquainted and to make training program best for you
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                How will I train?
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+              >
+                <span class="faq-dot"></span>How will I train?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFAQ"
+            >
               <div class="accordion-body">
-                You will train through our interactive platform with video instructions and personal calls from your trainer.
+                Sign up in Fitness Online with your phone number. No spam
+                guaranteed. You can skip using Fitness Online at any moment. We
+                will immediately add you in our chat bot. In 24 hours after payment your trainer will contact you to get acquainted and to make training program best for you
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
-                Who are trainers?
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+              >
+                <span class="faq-dot"></span>Who are trainers?
               </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFAQ"
+            >
               <div class="accordion-body">
-                All our trainers are certified professionals with extensive experience in personal training and nutrition.
+                Sign up in Fitness Online with your phone number. No spam
+                guaranteed. You can skip using Fitness Online at any moment. We
+                will immediately add you in our chat bot. In 24 hours after payment your trainer will contact you to get acquainted and to make training program best for you
               </div>
             </div>
           </div>
@@ -399,32 +660,71 @@
     <section id="contact" class="bg-light-section text-center">
       <div class="container">
         <h1 class="display-3 fw-bold mb-4">Start Training</h1>
-        <p class="fs-5 text-secondary mb-5 mx-auto opacity-75" style="max-width: 500px">
-          Leave your phone and we will send you a link to our special chat bot. No spam guaranteed.
+        <p
+          class="fs-5 text-secondary mb-5 mx-auto opacity-100"
+        >
+          Leave your phone and we will send you a link to our special chat bot.
+          No spam guaranteed.
         </p>
 
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 col-lg-5 text-start">
-            <div class="card card-custom p-4 p-md-5 shadow border-0">
+            <div class="card card-custom p-4 p-md-5">
               <form action="#">
                 <div class="mb-4">
-                  <label for="phone" class="form-label fw-bold small text-uppercase text-secondary">Your Phone</label>
-                  <input type="tel" class="form-control form-control-lg border-0 bg-light" id="phone" placeholder="+1__" required>
+                  <label
+                    for="phone"
+                    class="form-label fw-bold small text-uppercase text-secondary"
+                    >Your Phone</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control form-control-lg bg-light border border-1"
+                    id="phone"
+                    placeholder="+1__"
+                    required
+                  />
                 </div>
 
                 <div class="mb-4">
-                  <label for="name" class="form-label fw-bold small text-uppercase text-secondary">Your Name</label>
-                  <input type="text" class="form-control form-control-lg border-0 bg-light" id="name" placeholder="Your Name" required>
+                  <label
+                    for="name"
+                    class="form-label fw-bold small text-uppercase text-secondary"
+                    >Your Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-lg bg-light border border-1"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
                 </div>
 
                 <div class="form-check mb-5">
-                  <input class="form-check-input" type="checkbox" id="terms" required>
-                  <label class="form-check-label text-secondary small" for="terms">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="terms"
+                    required
+                  />
+                  <label
+                    class="form-check-label text-secondary small"
+                    for="terms"
+                    
+                  >
                     I accept Terms of Service
                   </label>
                 </div>
 
-                <button type="submit" class="btn btn-training btn-lg w-100 shadow">Start Training</button>
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-training btn-lg w-fit shadow"
+                  >
+                    Start Training
+                  </button>
+                </div>
               </form>
             </div>
           </div>
@@ -436,7 +736,9 @@
       <div class="container px-4 px-md-0">
         <div class="row align-items-center">
           <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
-            <a href="#" class="text-white text-decoration-none fw-bold fs-5">Terms of Service</a>
+            <a href="#" class="text-white text-decoration-none fw-bold fs-5"
+              >Terms of Service</a
+            >
           </div>
           <div class="col-12 col-md-6 text-center text-md-end opacity-75">
             <p class="mb-0 fs-5">&copy; Fitness Online, 2022</p>
@@ -457,19 +759,13 @@
       link.addEventListener("click", () => {
         // If the menu is currently shown (expanded in mobile view)
         if (menuToggle.classList.contains("show")) {
-          const bsCollapse = bootstrap.Collapse.getInstance(menuToggle) || new bootstrap.Collapse(menuToggle);
+          const bsCollapse =
+            bootstrap.Collapse.getInstance(menuToggle) ||
+            new bootstrap.Collapse(menuToggle);
           bsCollapse.hide();
         }
       });
     });
 
-    window.onscroll = function () {
-      var nav = document.querySelector(".navbar");
-      if (window.scrollY > 50) {
-        nav.classList.add("scrolled");
-      } else {
-        nav.classList.remove("scrolled");
-      }
-    };
   </script>
 </html>
