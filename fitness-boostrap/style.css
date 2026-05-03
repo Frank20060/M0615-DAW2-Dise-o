@@ -303,3 +303,8 @@ section {
   -webkit-text-fill-color: #ffffff;
 }
 
+.pricing-month-text {
+  color: #000000 !important;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.75) !important;
+}
+
