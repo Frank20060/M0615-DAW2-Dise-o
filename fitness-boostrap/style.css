@@ -25,6 +25,7 @@ body {
     sans-serif;
   overflow-x: hidden;
   color: #333;
+  background-color: #222; /* Added for WAVE contrast calculation on transparent elements */
 }
 
 section {
@@ -32,7 +33,12 @@ section {
 }
 
 .bg-light-section {
-  background-color: var(--custom-light);
+  background-color: #f8f9fa !important;
+}
+
+/* Explicit bg-primary for WAVE tool to detect */
+.bg-primary {
+  background-color: #7036ba !important;
 }
 
 /* --- NAVBAR --- */
