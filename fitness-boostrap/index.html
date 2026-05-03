@@ -754,24 +754,24 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Auto-close navbar on click (mobile only)
+      const navLinks = document.querySelectorAll(".nav-link");
+      const menuToggle = document.getElementById("navbarNav");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          // If the menu is currently shown (expanded in mobile view)
+          if (menuToggle.classList.contains("show")) {
+            const bsCollapse =
+              bootstrap.Collapse.getInstance(menuToggle) ||
+              new bootstrap.Collapse(menuToggle);
+            bsCollapse.hide();
+          }
+        });
+      });
+
+    </script>
   </body>
 
-  <script>
-    // Auto-close navbar on click (mobile only)
-    const navLinks = document.querySelectorAll(".nav-link");
-    const menuToggle = document.getElementById("navbarNav");
-
-    navLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        // If the menu is currently shown (expanded in mobile view)
-        if (menuToggle.classList.contains("show")) {
-          const bsCollapse =
-            bootstrap.Collapse.getInstance(menuToggle) ||
-            new bootstrap.Collapse(menuToggle);
-          bsCollapse.hide();
-        }
-      });
-    });
-
-  </script>
 </html>
