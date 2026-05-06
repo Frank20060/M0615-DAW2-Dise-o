@@ -33,7 +33,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -196,6 +196,7 @@
                 viewBox="0 0 100 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path
                   d="M70 10L85 20L70 30"
@@ -239,7 +240,8 @@
               <div class="mb-3">
                 <img
                   src="media/featues/listItems/item1.svg"
-                  alt="Comfortable Place Icon"
+                  alt="Comfortable Place"
+                  aria-hidden="true"
                   width="60"
                   height="60"
                 />
@@ -257,7 +259,8 @@
               <div class="mb-3">
                 <img
                   src="media/featues/listItems/item3.svg"
-                  alt="Professional Trainers Icon"
+                  alt="Professional Trainers"
+                  aria-hidden="true"
                   width="60"
                   height="60"
                 />
@@ -275,7 +278,8 @@
               <div class="mb-3">
                 <img
                   src="media/featues/listItems/item2.svg"
-                  alt="Individual Approach Icon"
+                  alt="Individual Approach"
+                  aria-hidden="true"
                   width="60"
                   height="60"
                 />
@@ -525,10 +529,12 @@
             type="button"
             data-bs-target="#feedbackCarousel"
             data-bs-slide="prev"
+            aria-label="Previous feedback"
           >
             <img
               src="media/feedback/arrow.svg"
-              alt="Previous feedback"
+              alt=""
+              aria-hidden="true"
               style="rotate: 180deg"
             />
           </button>
@@ -537,8 +543,9 @@
             type="button"
             data-bs-target="#feedbackCarousel"
             data-bs-slide="next"
+            aria-label="Next feedback"
           >
-            <img src="media/feedback/arrow.svg" alt="Next feedback" />
+            <img src="media/feedback/arrow.svg" alt="" aria-hidden="true" />
           </button>
         </div>
       </div>
@@ -562,7 +569,7 @@
                 data-bs-target="#collapseOne"
                 aria-expanded="true"
               >
-                <span class="faq-dot"></span>How can I start?
+                <span class="faq-dot" aria-hidden="true"></span>How can I start?
               </button>
             </h3>
             <div
@@ -586,7 +593,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
               >
-                <span class="faq-dot"></span>How much does it cost?
+                <span class="faq-dot" aria-hidden="true"></span>How much does it cost?
               </button>
             </h3>
             <div
@@ -610,7 +617,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
               >
-                <span class="faq-dot"></span>How will I train?
+                <span class="faq-dot" aria-hidden="true"></span>How will I train?
               </button>
             </h3>
             <div
