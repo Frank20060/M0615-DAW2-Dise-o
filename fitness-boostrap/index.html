@@ -75,7 +75,7 @@
             </p>
 
             <div class="d-none d-xl-block">
-              <a href="#contact" class="btn btn-training btn-lg shadow-lg">Start Training</a>
+              <a href="#contact" id="hero-cta-desktop" class="btn btn-training btn-lg shadow-lg" aria-label="Start training from hero section">Start Training</a>
             </div>
           </div>
 
@@ -86,7 +86,9 @@
           >
             <a
               href="#contact"
+              id="hero-cta-mobile"
               class="btn btn-training shadow-lg text-nowrap py-3 px-5 fs-4"
+              aria-label="Start training from mobile hero section"
               >Start Training</a
             >
           </div>
@@ -288,7 +290,7 @@
         </div>
 
         <div class="mt-5">
-          <a href="#contact" class="btn btn-training btn-lg">Start Training</a>
+          <a href="#contact" id="features-cta" class="btn btn-training btn-lg" aria-label="Start training from features section">Start Training</a>
         </div>
       </div>
     </section>
@@ -764,6 +766,32 @@
         });
       });
 
+
+      // Accessibility: Toggle aria-hidden between Desktop and Mobile Hero buttons
+      const desktopCta = document.getElementById("hero-cta-desktop");
+      const mobileCta = document.getElementById("hero-cta-mobile");
+
+      function updateAccessibility() {
+        // Bootstrap 'xl' breakpoint is 1200px
+        const isDesktop = window.innerWidth >= 1200;
+
+        if (isDesktop) {
+          desktopCta.setAttribute("aria-hidden", "false");
+          desktopCta.removeAttribute("tabindex");
+          
+          mobileCta.setAttribute("aria-hidden", "true");
+          mobileCta.setAttribute("tabindex", "-1");
+        } else {
+          desktopCta.setAttribute("aria-hidden", "true");
+          desktopCta.setAttribute("tabindex", "-1");
+
+          mobileCta.setAttribute("aria-hidden", "false");
+          mobileCta.removeAttribute("tabindex");
+        }
+      }
+
+      window.addEventListener("resize", updateAccessibility);
+      updateAccessibility(); // Initial check
     </script>
   </body>
 
