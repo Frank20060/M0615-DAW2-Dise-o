@@ -16,7 +16,10 @@ fitness-boostrap/index.html
 
 ### 2. Informe TAW de referencia:
 
+Utiliza el informe como referencia nunca como fuente de verdad, ya que suele dar muchos falsos positivos
+
 ```
+
 
 ---
 
