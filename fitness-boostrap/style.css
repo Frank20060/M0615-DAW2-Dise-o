@@ -6,6 +6,12 @@
   --custom-purple-light: rgba(255, 255, 255, 0.15);
 }
 
+:focus-visible {
+  outline: 3px solid #ffdd57;
+  /* color con buen contraste */
+  outline-offset: 2px;
+}
+
 /* --- CONFIGURACIÓN GLOBAL --- */
 html {
   scroll-behavior: smooth;
