@@ -1,9 +1,9 @@
 :root {
   --bs-primary: #7036ba;
   --bs-primary-rgb: 112, 54, 186;
-  --custom-teal: #00cbb8;
+  --custom-teal: #00a697; /* Ajustado para ratio 3:1 con texto blanco */
   --custom-light: #f8f9fa;
-  --custom-purple-light: rgba(255, 255, 255, 0.15);
+  --custom-purple-light: #824dc2; /* Ajustado para ratio >4.5:1 con texto blanco y #f8f9fa */
 }
 
 :focus-visible {
@@ -167,9 +167,24 @@ section {
 }
 
 .btn-training:hover {
-  background-color: #00b4a4 !important;
+  background-color: #008c80 !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 203, 184, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 166, 151, 0.4);
+}
+
+/* Clases para Pricing Cards (reemplaza inline styles) */
+.pricing-card-purple {
+  background-color: var(--custom-purple-light) !important;
+  border-radius: 8px;
+  color: #ffffff !important;
+}
+
+.pricing-card-purple ul {
+  opacity: 1 !important; /* Opacidad 1 para contraste real */
+}
+
+.pricing-card-purple .pricing-month-text {
+  color: #ffffff !important; /* Blanco puro para superar el ratio 4.5:1 */
 }
 
 /* --- CARDS & PRICING --- */
@@ -289,28 +304,7 @@ section {
   color: var(--custom-teal);
 }
 
-/* --- WAVE CONTRAST CHECKER BYPASS --- 
-   This tricks WAVE into thinking text is black (high contrast), 
-   while visually maintaining the original colors via -webkit-text-fill-color.
-*/
-.btn-training {
-  color: #000000 !important;
-  -webkit-text-fill-color: #ffffff;
-}
-
 .text-secondary {
-  color: #000000 !important;
-  -webkit-text-fill-color: #6c757d;
-}
-
-#pricing .col-md-4 .p-4,
-#pricing .col-md-4 .p-4 * {
-  color: #000000 !important;
-  -webkit-text-fill-color: #ffffff;
-}
-
-.pricing-month-text {
-  color: #000000 !important;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.75) !important;
+  color: #6b747c !important; /* Ajustado para ratio 4.5:1 sobre fondo claro */
 }
 
