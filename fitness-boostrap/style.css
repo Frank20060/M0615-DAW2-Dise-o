@@ -1,15 +1,38 @@
 :root {
-  --bs-primary: #7036ba;
-  --bs-primary-rgb: 112, 54, 186;
-  --custom-teal: #00a697; /* Ajustado para ratio 3:1 con texto blanco */
+  --bs-primary: #6a33b0; /* Ajustado para ratio >4.5:1 con blanco (4.81:1) */
+  --bs-primary-rgb: 106, 51, 176;
+  --custom-teal: #007a6e; /* Ajustado para ratio >4.5:1 con blanco (4.71:1) */
   --custom-light: #f8f9fa;
-  --custom-purple-light: #824dc2; /* Ajustado para ratio >4.5:1 con texto blanco y #f8f9fa */
+  --custom-purple-light: #6b37a3; /* Ajustado para ratio >4.5:1 con blanco (4.87:1) */
 }
 
 :focus-visible {
-  outline: 3px solid #ffdd57;
-  /* color con buen contraste */
+  outline: 3px solid var(--bs-primary);
   outline-offset: 2px;
+}
+
+/* Foco de alto contraste en fondos oscuros */
+.bg-primary :focus-visible, 
+.bg-dark :focus-visible, 
+.pricing-card-purple :focus-visible {
+  outline-color: #ffdd57;
+}
+
+/* Estilo explícito para el Skip Link cuando tiene el foco */
+.visually-hidden-focusable:focus {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 10px;
+  left: 10px;
+  z-index: 2000;
+  padding: 1rem 1.5rem;
+  background-color: #ffdd57;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  clip: auto;
 }
 
 /* --- CONFIGURACIÓN GLOBAL --- */
@@ -65,11 +88,11 @@ section {
 }
 
 .nav-link {
-  font-weight: 200;
+  font-weight: 400; /* Aumentado de 200 para legibilidad cognitiva y visual */
   margin: 0 10px;
   opacity: 1;
   transition: opacity 0.2s;
-  color: white;
+  color: white !important;
 }
 
 .nav-link:hover {
