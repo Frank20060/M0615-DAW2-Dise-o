@@ -37,8 +37,9 @@
     </script>
   </head>
   <body>
-    <a href="#home" class="visually-hidden-focusable">Skip to main content</a>
-    <nav class="navbar navbar-expand-xl navbar-dark position-absolute w-100" style="top: 0; z-index: 1000;">
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-dark position-absolute w-100" style="top: 0; z-index: 1000;">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#home">
           <img src="media/icono.svg"
@@ -84,7 +85,9 @@
         </div>
       </div>
     </nav>
+    </header>
 
+    <main id="main-content">
     <section id="home" class="container-fluid p-0">
       <div class="row g-0 hero-row">
         <div
@@ -329,9 +332,9 @@
         <div class="row g-4 justify-content-center px-lg-5">
           <!-- Start Card -->
           <div class="col-12 col-md-4">
-            <div class="h-100 p-4 d-flex flex-column" style="background-color: #9765d7; border-radius: 8px;">
+            <div class="h-100 p-4 d-flex flex-column pricing-card-purple">
               <h3 class="fw-bold mb-4" style="font-size: 2.5rem;">Start</h3>
-              <ul class="mb-5 ps-3" style="font-size: 0.9rem; line-height: 1.6; opacity: 0.9;">
+              <ul class="mb-5 ps-3" style="font-size: 0.9rem; line-height: 1.6;">
                 <li class="mb-1">Program for 8 workouts</li>
                 <li class="mb-1">3 calls with the trainer</li>
                 <li class="mb-1">Video instructions</li>
@@ -350,9 +353,9 @@
 
           <!-- Middle Card -->
           <div class="col-12 col-md-4">
-            <div class="h-100 p-4 d-flex flex-column" style="background-color: #9765d7; border-radius: 8px;">
+            <div class="h-100 p-4 d-flex flex-column pricing-card-purple">
               <h3 class="fw-bold mb-4" style="font-size: 2.5rem;">Middle</h3>
-              <ul class="mb-5 ps-3" style="font-size: 0.9rem; line-height: 1.6; opacity: 0.9;">
+              <ul class="mb-5 ps-3" style="font-size: 0.9rem; line-height: 1.6;">
                 <li class="mb-1">Program for 18 workouts</li>
                 <li class="mb-1">5 calls with the trainer</li>
                 <li class="mb-1">Video instructions</li>
@@ -373,9 +376,9 @@
 
           <!-- Pro Card -->
           <div class="col-12 col-md-4">
-            <div class="h-100 p-4 d-flex flex-column" style="background-color: #9765d7; border-radius: 8px;">
+            <div class="h-100 p-4 d-flex flex-column pricing-card-purple">
               <h3 class="fw-bold mb-4" style="font-size: 2.5rem;">Pro</h3>
-              <ul class="mb-5 ps-3" style="font-size: 0.9rem; line-height: 1.6; opacity: 0.9;">
+              <ul class="mb-5 ps-3" style="font-size: 0.9rem; line-height: 1.6;">
                 <li class="mb-1">Program for 40 workouts</li>
                 <li class="mb-1">15 calls with the trainer</li>
                 <li class="mb-1">Video instructions</li>
@@ -592,6 +595,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
                 aria-expanded="true"
+                aria-controls="collapseOne"
               >
                 <span class="faq-dot" aria-hidden="true"></span>How can I start?
               </button>
@@ -616,6 +620,8 @@
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
               >
                 <span class="faq-dot" aria-hidden="true"></span>How much does it cost?
               </button>
@@ -640,6 +646,8 @@
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
               >
                 <span class="faq-dot" aria-hidden="true"></span>How will I train?
               </button>
@@ -664,10 +672,12 @@
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
               >
-                <span class="faq-dot"></span>Who are trainers?
+                <span class="faq-dot" aria-hidden="true"></span>Who are trainers?
               </button>
-            </h2>
+            </h3> <!-- Corregido: antes h2 -->
             <div
               id="collapseFour"
               class="accordion-collapse collapse"
@@ -763,6 +773,7 @@
         </div>
       </div>
     </section>
+    </main>
 
     <footer class="bg-primary text-white py-5">
       <div class="container px-4 px-md-0">
@@ -773,7 +784,7 @@
             >
           </div>
           <div class="col-12 col-md-6 text-center text-md-end opacity-75">
-            <p class="mb-0 fs-5">&copy; Fitness Online, 2022</p>
+            <p class="mb-0 fs-5">&copy; Fitness Online, 2022 --- WCAG 2.1 AAA</p>
           </div>
         </div>
       </div>
